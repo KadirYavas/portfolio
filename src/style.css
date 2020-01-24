@@ -1,61 +1,140 @@
-body{
-    margin: 0px;
+body {
+  margin: 0px;
 }
-.fond{
-    /* background-image: url('./img/header.jpg'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 800px;
-    background-color: #BD584E;
+
+.fond {
+  background-image: url("./img/backed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  background-color: #BD584E;
 }
-.btnHeader{
-    background-color: #FFF;
-    color: #303030;
-    padding: 14px 21px;
-    font-size: 13px;
-    border-radius: 30px;
-    border: 0px;
+
+.btnHeader {
+  background-color: #FFF;
+  color: #303030;
+  padding: 14px 21px;
+  font-size: 13px;
+  border-radius: 30px;
+  border: 0px;
 }
-.row{
-    height: 300px;
+
+.row {
+  height: 300px;
 }
-.colorHead{
-    color: white;
+
+.colorHead {
+  color: #BD584E;
 }
-.spanNav{
-    font-size: 40px;
-    color: white;
-    font-family: 'Indie Flower', cursive;
+
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 0.1em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  max-width: max-content;
+  letter-spacing: 0.15em;
+  animation: typing 2s steps(100, end), blink-caret 0.7s step-end infinite;
 }
-.nav-link{
-    font-size: 20px;
-    margin: 0px 10px;
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
-#navbarText a{
-    color: white;
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
-#navbarText a:hover{
-    color: grey;
+.spanNav {
+  font-size: 40px;
+  color: white;
+  font-family: "Indie Flower", cursive;
 }
-.fab{
-    color: white;
+
+.nav-link {
+  font-size: 20px;
+  margin: 0px 10px;
 }
-.about{
-    background-color: rgb(255, 226, 233);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 35px;
+
+#navbarText a {
+  color: white;
 }
-.pAbout{
-    width: 50vw;
-    text-align: center;
+#navbarText a:hover {
+  color: grey;
 }
-.btnAbout{
-    background-color: #FFF;
-    color: #303030;
-    padding: 17px 25px;
-    border-radius: 30px;
-    border: 0px;
+
+.fab {
+  color: white;
 }
+
+.about {
+  background-color: #F7EFF1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+}
+
+.pAbout {
+  width: 50vw;
+  text-align: center;
+}
+
+.btnAbout {
+  background-color: #FFF;
+  color: #303030;
+  padding: 17px 25px;
+  border-radius: 30px;
+  border: 0px;
+}
+
+.skill {
+  background-color: #F6F7FA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+}
+
+.card {
+  width: 50%;
+}
+
+.skillDiv .card {
+  padding: 15px;
+  height: 80%;
+}
+.skillDiv .card:hover {
+  opacity: 0.4;
+  background-color: black;
+}
+
+.projet {
+  background-color: #F7EFF1;
+}
+.projet a {
+  color: grey;
+}
+.projet a:hover {
+  color: black;
+  text-decoration: none;
+}
+.projet li {
+  list-style: none;
+}
+.projet img {
+  width: 30%;
+}
+
+/*# sourceMappingURL=style.css.map */
