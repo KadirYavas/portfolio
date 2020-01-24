@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+}
+.fond{
+    /* background-image: url('./img/header.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    background-color: #BD584E;
+}
+.btnHeader{
+    background-color: #FFF;
+    color: #303030;
+    padding: 14px 21px;
+    font-size: 13px;
+    border-radius: 30px;
+    border: 0px;
+}
+.row{
+    height: 300px;
+}
+.colorHead{
+    color: white;
+}
+.spanNav{
+    font-size: 40px;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}
+.nav-link{
+    font-size: 20px;
+    margin: 0px 10px;
+}
+#navbarText a{
+    color: white;
+}
+#navbarText a:hover{
+    color: grey;
+}
+.fab{
+    color: white;
+}
+.about{
+    background-color: rgb(255, 226, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+}
+.pAbout{
+    width: 50vw;
+    text-align: center;
+}
+.btnAbout{
+    background-color: #FFF;
+    color: #303030;
+    padding: 17px 25px;
+    border-radius: 30px;
+    border: 0px;
+}
