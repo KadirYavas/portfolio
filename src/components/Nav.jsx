@@ -18,19 +18,19 @@ return (
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#service">Service</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projets</a>
+                        <a class="nav-link" href="#skill">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#pro">Projets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -39,6 +39,7 @@ return (
     <div className="col-2">
         <a href="https://www.linkedin.com/in/salih-kadir-yavas/"><i class="fab fa-linkedin-in fa-1x p-4"></i></a>
         <a href="https://www.instagram.com/yavas.03/"><i class="fab fa-instagram fa-1x p-4"></i></a>
+        <a href="https://github.com/KadirYavas"><i class="fab fa-github fa-1x p-4"></i></a>
     </div>
 </div>
 )

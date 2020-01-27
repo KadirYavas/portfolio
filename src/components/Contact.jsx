@@ -2,8 +2,8 @@ import React from 'react';
 
 const Contact = () => {
 return(
-<div className="contact text-center p-5">
-    <h3 className="text-uppercase">Contactez-moi !</h3>
+<div id="contact" className="contact text-center p-5">
+    <h3 className="text-uppercase serv">Contactez-moi !</h3>
     <form className="container" action="">
         <div className="form-row">
             <div className="form-group col-md-6">
@@ -55,7 +55,7 @@ return(
                 </label>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Envoyez</button>
+        <button type="submit" class="btnContact"><span>Envoyez</span></button>
     </form>
 </div>
 )

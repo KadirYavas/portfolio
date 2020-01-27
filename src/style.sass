@@ -1,3 +1,9 @@
+$servColor: #06BC9B
+$pepe: #525D68
+$rose: #F7EFF1
+$grey: #F6F7FA
+
+	
 body 
 	margin: 0px 
 .fond 
@@ -45,7 +51,7 @@ body
 	display: flex
 	align-content: center
 .colorHead 
-	color: #BD584E 
+	color: $servColor
 .typewriter 
 	color: #fff 
 	font-family: monospace 
@@ -55,12 +61,12 @@ body
 	margin: 0 auto 
 	max-width: max-content 
 	letter-spacing: .15em 
-	animation: typing 2.5s steps(100, end), blink-caret .9s step-end infinite 
+	animation: typing 2s steps(100, end), blink-caret .9s step-end infinite 
 @keyframes typing 
 	from 
 		width: 0%
 	to 
-		width: 60% 
+		width: 50% 
 
 @keyframes blink-caret 
 	from,
@@ -78,33 +84,60 @@ body
 	margin: 0px 10px 
 #navbarText 
 	a 
-		color: black
+		color: $servColor
 		&:hover 
 			color: #BD584E 
 .fab 
 	color: white 
 .about 
-	background-color: #F7EFF1
+	background-color: $rose
 .pAbout 
 	width: 40vw 
 	text-align: center
+	color: $pepe
 .btnAbout 
-	background-color: #FFF 
-	color: #303030 
-	padding: 17px 25px 
-	border-radius: 30px 
-	border: 0px 
-	margin: 30px
+	display: inline-block
+	border-radius: 50px
+	background-color: #a1c53788
+	border: none
+	color: #FFFFFF
+	text-align: center
+	font-size: 10px
+	padding: 15px
+	width: 160px
+	transition: all 0.5s
+	cursor: pointer
+	margin: 5px
+	a
+		cursor: pointer
+		display: inline-block
+		position: relative
+		transition: 0.5s
+		color: #bd584e
+		&:after 
+			content: '\00bb' 
+			position: absolute 
+			opacity: 0 
+			top: 0 
+			right: -20px 
+			transition: 0.5s 
+	&:hover 
+		a 
+			padding-right: 25px
+			color: black 
+			&:after 
+				opacity: 1 
+				right: 0
 .skill 
-	background-color: #F6F7FA
+	background-color: $rose
 	padding: 25px 
 .skillImg
 	img 
 		width: 45px
 .projet
-	background-color: #F7EFF1
+	background-color: $grey
 	a 
-		color: grey
+		color: $pepe
 		&:hover 
 			color: black
 			text-decoration: none
@@ -113,7 +146,7 @@ body
 	img 
 		width: 30%
 .contact
-	background-color: #F6F7FA
+	background-color: $rose
 .footer 
 	background-color: #161616
 	height: 150px
@@ -121,3 +154,43 @@ body
 	font-size: 40px 
 	color: white 
 	font-family: 'Indie Flower', cursive
+.btnContact 
+	display: inline-block
+	border-radius: 50px
+	background-color: #a1c53788
+	border: none
+	color: #FFFFFF
+	text-align: center
+	font-size: 10px
+	padding: 15px
+	width: 160px
+	transition: all 0.5s
+	cursor: pointer
+	margin: 5px
+	span
+		cursor: pointer
+		display: inline-block
+		position: relative
+		transition: 0.5s
+		color: #bd584e
+		font-size: 15px
+		&:after 
+			content: '\00bb' 
+			position: absolute 
+			opacity: 0 
+			top: 0 
+			right: -20px 
+			transition: 0.5s 
+	&:hover 
+		span
+			padding-right: 25px
+			color: black 
+			&:after 
+				opacity: 1 
+				right: 0
+.serv 
+	color: $servColor
+.servp 
+	color: $pepe
+#service 
+	background-color: $grey

@@ -5,12 +5,14 @@ import Skill from './components/Skill'
 import Projet from './components/Projet'
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Service from './components/Service';
 
 const App = () => {
     return (
         <div>
             <Header />
             <About />
+            <Service />
             <Skill />
             <Projet />
             <Contact />

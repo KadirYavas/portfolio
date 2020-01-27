@@ -57,7 +57,7 @@ body {
 }
 
 .colorHead {
-  color: #BD584E;
+  color: #06BC9B;
 }
 
 .typewriter {
@@ -69,7 +69,7 @@ body {
   margin: 0 auto;
   max-width: max-content;
   letter-spacing: 0.15em;
-  animation: typing 2.5s steps(100, end), blink-caret 0.9s step-end infinite;
+  animation: typing 2s steps(100, end), blink-caret 0.9s step-end infinite;
 }
 
 @keyframes typing {
@@ -77,7 +77,7 @@ body {
     width: 0%;
   }
   to {
-    width: 60%;
+    width: 50%;
   }
 }
 @keyframes blink-caret {
@@ -100,7 +100,7 @@ body {
 }
 
 #navbarText a {
-  color: black;
+  color: #06BC9B;
 }
 #navbarText a:hover {
   color: #BD584E;
@@ -117,19 +117,49 @@ body {
 .pAbout {
   width: 40vw;
   text-align: center;
+  color: #525D68;
 }
 
 .btnAbout {
-  background-color: #FFF;
-  color: #303030;
-  padding: 17px 25px;
-  border-radius: 30px;
-  border: 0px;
-  margin: 30px;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #a1c53788;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 15px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.btnAbout a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #bd584e;
+}
+.btnAbout a:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btnAbout:hover a {
+  padding-right: 25px;
+  color: black;
+}
+.btnAbout:hover a:after {
+  opacity: 1;
+  right: 0;
 }
 
 .skill {
-  background-color: #F6F7FA;
+  background-color: #F7EFF1;
   padding: 25px;
 }
 
@@ -138,10 +168,10 @@ body {
 }
 
 .projet {
-  background-color: #F7EFF1;
+  background-color: #F6F7FA;
 }
 .projet a {
-  color: grey;
+  color: #525D68;
 }
 .projet a:hover {
   color: black;
@@ -155,7 +185,7 @@ body {
 }
 
 .contact {
-  background-color: #F6F7FA;
+  background-color: #F7EFF1;
 }
 
 .footer {
@@ -167,6 +197,57 @@ body {
   font-size: 40px;
   color: white;
   font-family: "Indie Flower", cursive;
+}
+
+.btnContact {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #a1c53788;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 15px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.btnContact span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #bd584e;
+  font-size: 15px;
+}
+.btnContact span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btnContact:hover span {
+  padding-right: 25px;
+  color: black;
+}
+.btnContact:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.serv {
+  color: #06BC9B;
+}
+
+.servp {
+  color: #525D68;
+}
+
+#service {
+  background-color: #F6F7FA;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,10 +9,10 @@ import GIT from '../img/giti.png'
 
 const Skill = () => {
 return (
-<div className="skill p-5">
+<div id="skill" className="skill p-5">
     <div className="text-center">
-        <h3 className="text-uppercase">Mes compétences</h3>
-    <p>Voici quelques languages que je pratique dans le développement web.</p>
+        <h3 className="text-uppercase serv">Mes compétences</h3>
+    <p className="servp">Voici quelques languages que je pratique dans le développement web.</p>
     </div>
     <div className="row skillImg">
         <div className="offset-3 col-3">

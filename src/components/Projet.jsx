@@ -15,7 +15,7 @@ import cvQuatre from '../img/cv4.png'
 const Projet = () => {
     return (
         <div id="pro" className="projet p-5">
-            <h3 className="text-center text-uppercase">Mes projets</h3>
+            <h3 className="text-center text-uppercase serv">Mes projets</h3>
             <ul className="container d-flex justify-content-around">
                 <a href=""><li>Projet: Les Chefs</li></a>
                 <a href=""><li>Projet: Emporium</li></a>
