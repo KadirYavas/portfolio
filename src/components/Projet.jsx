@@ -21,6 +21,7 @@ const Projet = () => {
     const [carChef, setCarChef] = useState('d-none')
     const [carEmp, setCarEmp] = useState('d-none')
     const [carCV, setCarCV] = useState('d-none')
+    
 
     const chef = () => {
         setBaseEmp('d-none')
@@ -67,13 +68,7 @@ const Projet = () => {
 
             <div className="carousel">
                 <div id="carouselExampleIndicators" className={"carousel slide " + carChef} data-ride="carousel">
-                    <ol className="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                    </ol>
+                    
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <img src={chefUn} className="d-block w-50" alt="..."></img>
@@ -92,11 +87,11 @@ const Projet = () => {
                         </div>
                     </div>
                     <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="carousel-control-prev-icon bg-warning rounded-circle" aria-hidden="true"></span>
                         <span className="sr-only">Previous</span>
                     </a>
                     <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="carousel-control-next-icon bg-warning rounded-circle" aria-hidden="true"></span>
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
@@ -104,12 +99,7 @@ const Projet = () => {
 
 
                 <div id="carouselExampleIndicators2" className={"carousel slide " + carEmp} data-ride="carousel">
-                    <ol className="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" className="active"></li>
-                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
-                    </ol>
+                    
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <img src={empUn} className="d-block w-50" alt="..."></img>
@@ -125,11 +115,11 @@ const Projet = () => {
                         </div>
                     </div>
                     <a className="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="carousel-control-prev-icon bg-warning rounded-circle" aria-hidden="true"></span>
                         <span className="sr-only">Previous</span>
                     </a>
                     <a className="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="carousel-control-next-icon bg-warning rounded-circle" aria-hidden="true"></span>
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
@@ -137,11 +127,7 @@ const Projet = () => {
 
 
                 <div id="carouselExampleIndicators3" className={"carousel slide text-center " + carCV} data-ride="carousel">
-                    <ol className="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators3" data-slide-to="0" className="active"></li>
-                        <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
-                    </ol>
+                    
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <img src={cvUn} className="d-block w-50" alt="..."></img>
@@ -154,11 +140,11 @@ const Projet = () => {
                         </div>-
                     </div>
                     <a className="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="carousel-control-prev-icon bg-warning rounded-circle" aria-hidden="true"></span>
                         <span className="sr-only">Previous</span>
                     </a>
                     <a className="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="carousel-control-next-icon bg-warning rounded-circle" aria-hidden="true"></span>
                         <span className="sr-only">Next</span>
                     </a>
                 </div>

@@ -25,32 +25,32 @@ return (
             <div><img src={GIT} alt="" /></div>
         </div>
         <div className="col-6 d-flex justify-content-around flex-column">
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" style={{width: 90 + '%'}} aria-valuenow="90"
+                <div className="progress">
+                    <div className="progress-bar bg-warning" role="progressbar" style={{width: 90 + '%'}} aria-valuenow="90"
                         aria-valuemin="0" aria-valuemax="100">HTML: 90%</div>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style={{width: 85 + '%'}} aria-valuenow="85"
+                <div className="progress">
+                    <div className="progress-bar bg-danger" role="progressbar" style={{width: 85 + '%'}} aria-valuenow="85"
                         aria-valuemin="0" aria-valuemax="100">CSS: 85%</div>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" style={{width: 80 + '%'}} aria-valuenow="80"
+                <div className="progress">
+                    <div className="progress-bar bg-warning" role="progressbar" style={{width: 80 + '%'}} aria-valuenow="80"
                         aria-valuemin="0" aria-valuemax="100">BOOTSTRAP: 80%</div>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style={{width: 75 + '%'}} aria-valuenow="75"
+                <div className="progress">
+                    <div className="progress-bar bg-danger" role="progressbar" style={{width: 75 + '%'}} aria-valuenow="75"
                         aria-valuemin="0" aria-valuemax="100">JAVASCRIPT: 75%</div>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" style={{width: 60 + '%'}} aria-valuenow="60"
+                <div className="progress">
+                    <div className="progress-bar bg-warning" role="progressbar" style={{width: 60 + '%'}} aria-valuenow="60"
                         aria-valuemin="0" aria-valuemax="100">REACT: 60%</div>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style={{width: 50 + '%'}} aria-valuenow="50"
+                <div className="progress">
+                    <div className="progress-bar bg-danger" role="progressbar" style={{width: 50 + '%'}} aria-valuenow="50"
                         aria-valuemin="0" aria-valuemax="100">BASH: 50%</div>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" style={{width: 50 + '%'}} aria-valuenow="50"
+                <div className="progress">
+                    <div className="progress-bar bg-warning" role="progressbar" style={{width: 50 + '%'}} aria-valuenow="50"
                         aria-valuemin="0" aria-valuemax="100">GIT: 50%</div>
                 </div>
         </div>

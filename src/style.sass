@@ -2,7 +2,9 @@ $servColor: #06BC9B
 $pepe: #525D68
 $rose: #F7EFF1
 $grey: #F6F7FA
-
+$text: 'Varela Round', sans-serif
+$titre: 'Raleway', sans-serif
+$btn: 'Poppins', sans-serif
 	
 body 
 	margin: 0px 
@@ -21,7 +23,8 @@ body
 	border: none
 	color: #FFFFFF
 	text-align: center
-	font-size: 10px
+	font-size: 11px
+	font-family: $btn
 	padding: 15px
 	width: 160px
 	transition: all 0.5s
@@ -53,9 +56,10 @@ body
 	align-content: center
 .colorHead 
 	color: $servColor
+	font-family: $text
 .typewriter 
 	color: #fff 
-	font-family: monospace 
+	font-family: $text 
 	overflow: hidden 
 	border-right: .10em solid orange 
 	white-space: nowrap 
@@ -82,7 +86,8 @@ body
 	font-family: 'Indie Flower', cursive 
 .nav-link 
 	font-size: 20px 
-	margin: 0px 10px 
+	margin: 0px 10px
+	font-family: $text
 #navbarText 
 	a 
 		color: $servColor
@@ -96,6 +101,7 @@ body
 	width: 40vw 
 	text-align: center
 	color: $pepe
+	font-family: $text
 .btnAbout 
 	display: inline-block
 	border-radius: 50px
@@ -103,7 +109,8 @@ body
 	border: none
 	color: #FFFFFF
 	text-align: center
-	font-size: 10px
+	font-size: 11px
+	font-family: $btn
 	padding: 15px
 	width: 160px
 	transition: all 0.5s
@@ -144,7 +151,8 @@ body
 		border: none
 		color: #FFFFFF
 		text-align: center
-		font-size: 10px
+		font-size: 12px
+		font-family: $btn
 		padding: 15px
 		width: 160px
 		transition: all 0.5s
@@ -189,6 +197,7 @@ body
 	background-color: #a1c53788
 	border: none
 	color: #FFFFFF
+	font-family: $btn
 	text-align: center
 	font-size: 10px
 	padding: 15px
@@ -219,8 +228,10 @@ body
 				right: 0
 .serv 
 	color: $servColor
+	font-family: $titre
 .servp 
 	color: $pepe
+	font-family: $text
 #service 
 	background-color: $grey
 html 
@@ -228,3 +239,5 @@ html
 .carousel-item 
 	img 
 		margin: 0 auto
+.stick 
+	position: fixed

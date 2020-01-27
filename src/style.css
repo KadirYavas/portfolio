@@ -20,7 +20,8 @@ body {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 10px;
+  font-size: 11px;
+  font-family: "Poppins", sans-serif;
   padding: 15px;
   width: 160px;
   transition: all 0.5s;
@@ -59,11 +60,12 @@ body {
 
 .colorHead {
   color: #06BC9B;
+  font-family: "Varela Round", sans-serif;
 }
 
 .typewriter {
   color: #fff;
-  font-family: monospace;
+  font-family: "Varela Round", sans-serif;
   overflow: hidden;
   border-right: 0.1em solid orange;
   white-space: nowrap;
@@ -98,6 +100,7 @@ body {
 .nav-link {
   font-size: 20px;
   margin: 0px 10px;
+  font-family: "Varela Round", sans-serif;
 }
 
 #navbarText a {
@@ -119,6 +122,7 @@ body {
   width: 40vw;
   text-align: center;
   color: #525D68;
+  font-family: "Varela Round", sans-serif;
 }
 
 .btnAbout {
@@ -128,7 +132,8 @@ body {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 10px;
+  font-size: 11px;
+  font-family: "Poppins", sans-serif;
   padding: 15px;
   width: 160px;
   transition: all 0.5s;
@@ -178,7 +183,8 @@ body {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
   padding: 15px;
   width: 160px;
   transition: all 0.5s;
@@ -236,6 +242,7 @@ body {
   background-color: #a1c53788;
   border: none;
   color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 10px;
   padding: 15px;
@@ -271,10 +278,12 @@ body {
 
 .serv {
   color: #06BC9B;
+  font-family: "Raleway", sans-serif;
 }
 
 .servp {
   color: #525D68;
+  font-family: "Varela Round", sans-serif;
 }
 
 #service {
@@ -287,6 +296,10 @@ html {
 
 .carousel-item img {
   margin: 0 auto;
+}
+
+.stick {
+  position: fixed;
 }
 
 /*# sourceMappingURL=style.css.map */
