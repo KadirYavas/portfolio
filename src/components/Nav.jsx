@@ -2,7 +2,7 @@ import React from 'react';
 
 const Nav = () => {
 return (
-<div className="row">
+<div className="row navi">
     <div className="col-1">
         <span className="spanNav p-3">S.K.Y</span>
     </div>

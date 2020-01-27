@@ -5,11 +5,11 @@ const Header = () => {
 return (
 <div className="fond text-white">
     <Nav />
-    <div className="row text-center">
-        <div className="col-5">
+    <div id="rower" className="row text-center">
+        <div className="col-12">
             <h1 className="typewriter colorHead font-weight-bold">Salih Kadir YAVAS</h1>
             <h4 className="colorHead font-weight-bold">Je suis un développeur web</h4>
-            <button className="btnHeader text-uppercase">Voir mes travaux</button>
+            <button className="btnHeader text-uppercase"><a href="#pro" style={{textDecoration: 'none'}}>Voir mes travaux</a></button>
         </div>
     </div>
 </div>

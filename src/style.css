@@ -1,27 +1,59 @@
+@charset "UTF-8";
 body {
   margin: 0px;
 }
 
 .fond {
-  background-image: url("./img/backed.jpg");
+  background-image: url("./img/comp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 800px;
+  height: 700px;
   background-color: #BD584E;
 }
 
 .btnHeader {
-  background-color: #FFF;
-  color: #303030;
-  padding: 14px 21px;
-  font-size: 13px;
-  border-radius: 30px;
-  border: 0px;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #BD58;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 15px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.btnHeader a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: white;
+}
+.btnHeader a:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btnHeader:hover a {
+  padding-right: 25px;
+  color: black;
+}
+.btnHeader:hover a:after {
+  opacity: 1;
+  right: 0;
 }
 
-.row {
-  height: 300px;
+#rower {
+  height: 500px;
+  display: flex;
+  align-content: center;
 }
 
 .colorHead {
@@ -37,7 +69,7 @@ body {
   margin: 0 auto;
   max-width: max-content;
   letter-spacing: 0.15em;
-  animation: typing 2s steps(100, end), blink-caret 0.7s step-end infinite;
+  animation: typing 2.5s steps(100, end), blink-caret 0.9s step-end infinite;
 }
 
 @keyframes typing {
@@ -45,7 +77,7 @@ body {
     width: 0%;
   }
   to {
-    width: 100%;
+    width: 60%;
   }
 }
 @keyframes blink-caret {
@@ -58,7 +90,7 @@ body {
 }
 .spanNav {
   font-size: 40px;
-  color: white;
+  color: black;
   font-family: "Indie Flower", cursive;
 }
 
@@ -68,10 +100,10 @@ body {
 }
 
 #navbarText a {
-  color: white;
+  color: black;
 }
 #navbarText a:hover {
-  color: grey;
+  color: #BD584E;
 }
 
 .fab {
@@ -80,14 +112,10 @@ body {
 
 .about {
   background-color: #F7EFF1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 35px;
 }
 
 .pAbout {
-  width: 50vw;
+  width: 40vw;
   text-align: center;
 }
 
@@ -97,27 +125,16 @@ body {
   padding: 17px 25px;
   border-radius: 30px;
   border: 0px;
+  margin: 30px;
 }
 
 .skill {
   background-color: #F6F7FA;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 35px;
+  padding: 25px;
 }
 
-.card {
-  width: 50%;
-}
-
-.skillDiv .card {
-  padding: 15px;
-  height: 80%;
-}
-.skillDiv .card:hover {
-  opacity: 0.4;
-  background-color: black;
+.skillImg img {
+  width: 45px;
 }
 
 .projet {
@@ -135,6 +152,21 @@ body {
 }
 .projet img {
   width: 30%;
+}
+
+.contact {
+  background-color: #F6F7FA;
+}
+
+.footer {
+  background-color: #161616;
+  height: 150px;
+}
+
+.spanNave {
+  font-size: 40px;
+  color: white;
+  font-family: "Indie Flower", cursive;
 }
 
 /*# sourceMappingURL=style.css.map */
