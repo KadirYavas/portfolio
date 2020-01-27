@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0px;
+  padding: 0px;
 }
 
 .fond {
@@ -170,12 +171,42 @@ body {
 .projet {
   background-color: #F6F7FA;
 }
-.projet a {
-  color: #525D68;
+.projet .btnPro {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #a1c53788;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 15px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
-.projet a:hover {
+.projet .btnPro span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #bd584e;
+}
+.projet .btnPro span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.projet .btnPro:hover span {
+  padding-right: 25px;
   color: black;
-  text-decoration: none;
+}
+.projet .btnPro:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 .projet li {
   list-style: none;
@@ -248,6 +279,14 @@ body {
 
 #service {
   background-color: #F6F7FA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.carousel-item img {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
