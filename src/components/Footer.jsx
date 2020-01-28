@@ -12,10 +12,10 @@ const Footer = () => {
                     <i className="fas fa-at fa-1x text-danger">   yavas00@hotmail.com</i>
                     <i className="fas fa-phone-volume fa-1x text-danger">   (+32) 486 90 50 69</i>
                 </div>
-                <div className="col-4">
-                    <a href="https://www.linkedin.com/in/salih-kadir-yavas/"><i className="fab fa-linkedin-in fa-1x p-5"></i></a>
-                    <a href="https://www.instagram.com/yavas.03/"><i className="fab fa-instagram fa-1x p-5"></i></a>
-                    <a href="https://github.com/KadirYavas"><i className="fab fa-github fa-1x p-5"></i></a>
+                <div className="col-4 foot">
+                    <a className="link" href="https://www.linkedin.com/in/salih-kadir-yavas/"><i className="fab fa-linkedin-in fa-1x p-5"></i></a>
+                    <a className="insta" href="https://www.instagram.com/yavas.03/"><i className="fab fa-instagram fa-1x p-5"></i></a>
+                    <a className="git" href="https://github.com/KadirYavas"><i className="fab fa-github fa-1x p-5"></i></a>
                 </div>
             </div>
         </footer>

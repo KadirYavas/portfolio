@@ -2,69 +2,49 @@ import React, { useState } from 'react';
 
 const Contact = () => {
 
-    const [show, setShow] = useState('d-none')
-
-    const modal = () => {
-        setShow('')
+    const end = () => {
+        alert('Message envoyé !')
     }
-
 
 return(
 <div id="contact" className="contact text-center p-5">
     <h3 className="text-uppercase serv">Contactez-moi !</h3>
-    <form className={"container " + show} action="">
-        <div className="form-row">
-            <div className="form-group col-md-6">
-                <label for="inputNom4">Nom</label>
-                <input type="text" className="form-control" id="inputNom4" placeholder="Nom"></input>
+<button className="btnContact" data-toggle="modal" data-target="#exampleModal">
+  <span>Affichez le formulaire</span>
+</button>
+<div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">Formulaire de contact</h5>
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+        <div className="row">
+            <div className="col-6">
+                <input style={{margin: 5 + 'px', borderRadius: 20 + 'px', height: 35 + 'px'}} className="form" type="text" placeholder="Nom"/>
+                <input style={{margin: 5 + 'px', borderRadius: 20 + 'px', height: 35 + 'px'}} className="form" type="text" placeholder="Email"/>
             </div>
-            <div className="form-group col-md-6">
-                <label for="inputPrenom4">Prénom</label>
-                <input type="text" className="form-control" id="inputPrenom4" placeholder="Prénom"></input>
-            </div>
-        </div>
-        <div className="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"></input>
-        </div>
-        <div className="form-row">
-            <div className="form-group col-md-6">
-                <label for="inputCity">Ville</label>
-                <input type="text" className="form-control" id="inputCity" placeholder="Ville"></input>
-            </div>
-            <div className="form-group col-md-4">
-                <label for="inputState">N°: Boites</label>
-                <select id="inputState" className="form-control">
-                    <option selected>Choose...</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+            <div className="col-6">
+                <input style={{margin: 5 + 'px', borderRadius: 20 + 'px', height: 35 + 'px'}} className="form" type="text" placeholder="Prénom"/>
+                <select id="inputState" className="form-control" style={{margin: 5 + 'px', backgroundColor: 'rgb(0, 0, 0, 0.05)', borderRadius: 20 + 'px', height: 35 + 'px'}}>
+                    <option selected>Choisir le sujet...</option>
+                    <option>Bug</option>
+                    <option>Idée</option>
+                    <option>Amélioration</option>
+                    <option>Contact</option>
                 </select>
             </div>
-            <div className="form-group col-md-2">
-                <label for="inputZip">Code postale</label>
-                <input type="text" className="form-control" id="inputZip" placeholder="Code postale"></input>
-            </div>
         </div>
-        <div className="form-group">
-            <label for="msg">Message :</label>
-            <div>
-                <textarea id="msg" name="user_message" placeholder="Veuillez saisir votre message."></textarea>
-            </div>
-            
-        </div>
-        <div className="form-group">
-            <div className="form-check">
-                <input className="form-check-input" type="checkbox" id="gridCheck"></input>
-                <label className="form-check-label" for="gridCheck">
-                    Validez
-                </label>
-            </div>
-        </div> 
-    </form>
-    <button onClick={modal} type="submit" className="btnContact"><span>Affichez le formulaire</span></button>
+        <textarea style={{height: 100 + 'px', margin: 10 + 'px'}} className="form" name="" id="" cols="30" rows="10" placeholder="Tapez votre message ici..."></textarea>
+        <button onClick={end} type="submit" className="btnContact"><span>Envoyez votre message !</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
 )
 }
