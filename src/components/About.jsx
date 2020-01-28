@@ -4,17 +4,17 @@ import Web from '../img/web.jpg'
 const About = () => {
 return (
 <div id="about" className="about">
-    <div className="row p-5">
+    <div className="dev row p-5">
         <div id="cf" className="col-6 text-center">
-            <img src={Web} alt="" className="w-50" />
+            <img src={Web} alt="" className="devImg w-50" />
         </div>
-        <div className="col-6 text-center">
+        <div className="col-sm-12 col-6 text-center">
             <h3 className="text-uppercase serv">A propos de moi.</h3>
             <p className="pAbout">Je suis un Full-Stack Developer habitant à Bruxelles et ayant étudié à MolenGeek. Sur
                 le plan personnel, je suis très motivé, axé sur les résultats, autonome, travailleur et rapide, je
                 cherche constamment à améliorer mes compétences.</p>
             <p>
-                <a class="btnAbout" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                <a class="col-sm-12 btnAbout" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                     aria-controls="collapseExample" style={{textDecoration: 'none'}}>
                     En savoir plus
                 </a>

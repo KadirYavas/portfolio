@@ -132,7 +132,6 @@ body {
 }
 
 .pAbout {
-  width: 40vw;
   text-align: center;
   color: #525D68;
   font-family: "Varela Round", sans-serif;
@@ -445,6 +444,49 @@ html {
 
 .form {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 576px) {
+  .typewriter {
+    font-size: 25px;
+  }
+
+  #rower {
+    height: 100px;
+  }
+
+  .fond {
+    height: 500px;
+  }
+
+  .dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dev .devImg {
+    margin: 25px;
+  }
+
+  .card-body p {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .service img {
+    width: 150px;
+  }
+
+  .projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

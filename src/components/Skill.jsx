@@ -15,7 +15,7 @@ return (
     <p className="servp">Voici quelques languages que je pratique dans le développement web.</p>
     </div>
     <div className="row skillImg">
-        <div className="offset-3 col-3">
+        <div className="offset-2 col-3">
             <div><img src={HTML} alt="" /></div>
             <div><img src={CSS} alt="" /></div>
             <div><img src={BOOTSTRAP} alt="" /></div>

@@ -10,7 +10,7 @@ const Service = () => {
                 <h3 className="text-uppercase serv">Service</h3>
                 <p className="servp">Les services que je peux vous offrir.</p>
             </div>
-            <div className="row text-center p-3">
+            <div className="service row text-center p-3">
                 <div className="col-4">
                     <img src={DEV} alt="" className="p-3 imgDev"/>
                     <h4 className="serv">Website Development</h4>

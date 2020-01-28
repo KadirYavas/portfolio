@@ -59,7 +59,7 @@ const Projet = () => {
     return (
         <div id="pro" className="projet p-5">
             <h3 className="text-center text-uppercase serv">Mes projets</h3>
-            <ul className="container d-flex justify-content-around">
+            <ul className="container projet d-flex justify-content-around">
                 <li><button onClick={all} className="btnPro"><span>Tous les projets</span></button></li>
                 <li><button onClick={chef} className="btnPro"><span>Projet: Les Chefs</span></button></li>
                 <li><button onClick={emp} className="btnPro"><span>Projet: Emporium</span></button></li>
