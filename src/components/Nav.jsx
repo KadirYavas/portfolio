@@ -17,7 +17,7 @@ const Nav = () => {
     })
 
 return (
-<div className={"row navi " + scro}>
+<div className={"row " + scro}>
     <div className="col-1">
         <span className="spanNav p-3">S.K.Y</span>
     </div>
