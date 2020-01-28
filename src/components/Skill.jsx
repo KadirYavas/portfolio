@@ -29,6 +29,11 @@ return (
                     <div className="progress-bar bg-warning" role="progressbar" style={{width: 90 + '%'}} aria-valuenow="90"
                         aria-valuemin="0" aria-valuemax="100">HTML: 90%</div>
                 </div>
+                <div class="ldBar"
+  style={{width:100 + '%', height: 60 + 'px'}}
+  data-stroke="data:ldbar/res,gradient(0,1,#9df,#9fd,#df9,#fd9)"
+  data-path="M10 20Q20 15 30 20Q40 25 50 20Q60 15 70 20Q80 25 90 20"
+></div>
                 <div className="progress">
                     <div className="progress-bar bg-danger" role="progressbar" style={{width: 85 + '%'}} aria-valuenow="85"
                         aria-valuemin="0" aria-valuemax="100">CSS: 85%</div>

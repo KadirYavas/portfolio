@@ -16,7 +16,6 @@ return (
     <div className="text-center p-4">
         <button className="text-uppercase btnAbout"><a href="#footer" style={{textDecoration: 'none'}}>Contactez-moi !</a></button>
     </div>
-    
 </div>
 )
 }
