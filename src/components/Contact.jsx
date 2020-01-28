@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
+
+    const [show, setShow] = useState('d-none')
+
+    const modal = () => {
+        setShow('')
+    }
+
+
 return(
 <div id="contact" className="contact text-center p-5">
     <h3 className="text-uppercase serv">Contactez-moi !</h3>
-    <form className="container" action="">
+    <form className={"container " + show} action="">
         <div className="form-row">
             <div className="form-group col-md-6">
                 <label for="inputNom4">Nom</label>
@@ -54,9 +62,9 @@ return(
                     Validez
                 </label>
             </div>
-        </div>
-        <button type="submit" className="btnContact"><span>Envoyez</span></button>
+        </div> 
     </form>
+    <button onClick={modal} type="submit" className="btnContact"><span>Affichez le formulaire</span></button>
 </div>
 )
 }

@@ -12,7 +12,7 @@ const Service = () => {
             </div>
             <div className="row text-center p-3">
                 <div className="col-4">
-                    <img src={DEV} alt="" className="p-3"/>
+                    <img src={DEV} alt="" className="p-3 imgDev"/>
                     <h4 className="serv">Website Development</h4>
                     <p className="servp">The web development process involves taking the graphical elements defined in the design process and coding them into a custom Wordpress theme.</p>
                 </div>

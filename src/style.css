@@ -60,8 +60,22 @@ body {
 .colorHead {
   color: #06BC9B;
   font-family: "Varela Round", sans-serif;
+  animation: opacityPulse 2s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 1;
 }
 
+@keyframes opacityPulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .typewriter {
   color: #fff;
   font-family: "Varela Round", sans-serif;
@@ -245,7 +259,7 @@ body {
   text-align: center;
   font-size: 10px;
   padding: 15px;
-  width: 160px;
+  width: 260px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -306,6 +320,13 @@ html {
 }
 .stick .spanNav {
   color: white;
+}
+
+.imgDev {
+  transition: transform 0.8s ease-in-out;
+}
+.imgDev:hover {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */
