@@ -88,7 +88,37 @@ body
 		border-color: transparent
 	50%
 		border-color: orange  
-
+.navig
+	.col-lg-3 
+		i 
+			color: $pepe
+		.fa-linkedin-in
+			&:hover
+				color: blue
+		.fa-instagram 
+			&:hover 
+				color: red
+		.fa-github 
+			&:hover 
+				color: black
+.stick 
+	position: fixed
+	z-index: 2
+	background-color: #212121
+	opacity: 0.75
+	height: 55px
+	width: 105%
+	.spanNav 
+		color: white
+	.col-lg-3 
+		i 
+			color: $pepe
+		.fa-linkedin-in
+				color: white
+		.fa-instagram  
+				color: white
+		.fa-github  
+				color: white
 .spanNav 
 	font-size: 40px 
 	color: black 
@@ -189,12 +219,35 @@ body
 	li 
 		list-style: none
 	img 
-		width: 30%
+		width: 50%
+	.gallery 
+		-webkit-column-count: 3 
+		-moz-column-count: 3 
+		column-count: 3 
+		-webkit-column-width: 33% 
+		-moz-column-width: 33% 
+		column-width: 33% 
+		.pics 
+			transition: all 350ms ease 
+		.animation 
+			transform: scale(1) 
+@media (max-width &: 450px) 
+	.gallery 
+		-webkit-column-count: 1 
+		-moz-column-count: 1 
+		column-count: 1 
+		-webkit-column-width: 100% 
+		-moz-column-width: 100% 
+		column-width: 100% 
+@media (max-width &: 400px) 
+	.btn.filter 
+		padding-left: 1.1rem 
+		padding-right: 1.1rem 
 .contact
 	background-color: $rose
 .footer 
 	background-color: #161616
-	height: 150px
+	height: 240px
 .spanNave
 	font-size: 40px 
 	color: white 
@@ -261,7 +314,7 @@ body
 			opacity: 0 
 			top: 0 
 			right: -20px 
-			transition: 0.5s 
+			transition: 0.5s
 	&:hover 
 		span
 			padding-right: 25px
@@ -282,15 +335,6 @@ html
 .carousel-item 
 	img 
 		margin: 0 auto
-.stick 
-	position: fixed
-	z-index: 2
-	background-color: #212121
-	opacity: 0.75
-	height: 55px
-	width: 105%
-	.spanNav 
-		color: white
 .imgDev 
 	transition: transform .8s ease-in-out
 	&:hover 
@@ -391,6 +435,13 @@ html
 .skillo
 	img 
 		width: 65px
+.card-body 
+		font-weight: bold
+		ul 
+			li 
+				list-style: none
+#contact .fade 
+	height: 580px
 @media screen and (max-width: 576px)
 	.typewriter 
 		font-size: 25px
@@ -404,9 +455,6 @@ html
 		align-items: center
 		.devImg	
 			margin: 25px
-	.card-body p 
-		font-size: 14px
-		font-weight: bold
 	.service 
 		img 
 			width: 200px
@@ -418,23 +466,14 @@ html
 		.offset-lg-2 
 			text-align: center
 	.footer 
-		height: 350px
+		height: 430px
 		.row 
-			.col-lg-4 
-				display: flex
-				justify-content: center
-				margin-top: 20px
-			.col-lg-3 
-				display: flex
-				flex-direction: column
-				align-items: center
-			.col-lg-5 
-				span
-					font-size: 15px
+			.foot 
+				a 
+					margin: 10px
 	.navig 
-		.col-lg-3 
-			i
-				color: #212121
+		background-color: #212121
+		opacity: 0.75
 	#exampleModal 
 		width: 380px
 		input 

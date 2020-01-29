@@ -13,18 +13,20 @@ return (
             <p className="pAbout">Je suis un Full-Stack Developer habitant à Bruxelles et ayant étudié à MolenGeek. Sur
                 le plan personnel, je suis très motivé, axé sur les résultats, autonome, travailleur et rapide, je
                 cherche constamment à améliorer mes compétences.</p>
-            <p>
-                <a className="col-sm-12 btnAbout" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+            <button className="btnAbout">
+                <a className="col-sm-12" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                     aria-controls="collapseExample" style={{textDecoration: 'none'}}>
                     En savoir plus
                 </a>
-            </p>
+            </button>
             <div className="collapse" id="collapseExample">
                 <div className="card card-body">
-                    <p style={{lineHeight: 10 + 'px'}}>Formation Full Stack Developer Web & Mobile - Molengeek</p>
-                    <p style={{lineHeight: 10 + 'px'}}>Sales Employee - Primark</p>
-                    <p style={{lineHeight: 10 + 'px'}}>Formation vendeur & réassortisseur - Bruxelles Formation</p>
-                    <p style={{lineHeight: 10 + 'px'}}>Formation steward - Bruxelles Formation</p>
+                    <ul>
+                        <li>Formation Full Stack Developer Web & Mobile - Molengeek</li>
+                        <li>Sales Employee - Primark Rue Neuve</li>
+                        <li>Formation vendeur & réassortisseur - Bruxelles Formation</li>
+                        <li>Formation steward - Bruxelles Formation</li>
+                    </ul>
                 </div>
             </div>
         </div>

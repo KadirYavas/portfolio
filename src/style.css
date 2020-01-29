@@ -104,6 +104,43 @@ body {
     border-color: orange;
   }
 }
+.navig .col-lg-3 i {
+  color: #525D68;
+}
+.navig .col-lg-3 .fa-linkedin-in:hover {
+  color: blue;
+}
+.navig .col-lg-3 .fa-instagram:hover {
+  color: red;
+}
+.navig .col-lg-3 .fa-github:hover {
+  color: black;
+}
+
+.stick {
+  position: fixed;
+  z-index: 2;
+  background-color: #212121;
+  opacity: 0.75;
+  height: 55px;
+  width: 105%;
+}
+.stick .spanNav {
+  color: white;
+}
+.stick .col-lg-3 i {
+  color: #525D68;
+}
+.stick .col-lg-3 .fa-linkedin-in {
+  color: white;
+}
+.stick .col-lg-3 .fa-instagram {
+  color: white;
+}
+.stick .col-lg-3 .fa-github {
+  color: white;
+}
+
 .spanNav {
   font-size: 40px;
   color: black;
@@ -230,16 +267,46 @@ body {
   list-style: none;
 }
 .projet img {
-  width: 30%;
+  width: 50%;
+}
+.projet .gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+.projet .gallery .pics {
+  transition: all 350ms ease;
+}
+.projet .gallery .animation {
+  transform: scale(1);
 }
 
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
 .contact {
   background-color: #F7EFF1;
 }
 
 .footer {
   background-color: #161616;
-  height: 150px;
+  height: 240px;
 }
 
 .spanNave {
@@ -348,18 +415,6 @@ html {
 
 .carousel-item img {
   margin: 0 auto;
-}
-
-.stick {
-  position: fixed;
-  z-index: 2;
-  background-color: #212121;
-  opacity: 0.75;
-  height: 55px;
-  width: 105%;
-}
-.stick .spanNav {
-  color: white;
 }
 
 .imgDev {
@@ -490,6 +545,17 @@ html {
   width: 65px;
 }
 
+.card-body {
+  font-weight: bold;
+}
+.card-body ul li {
+  list-style: none;
+}
+
+#contact .fade {
+  height: 580px;
+}
+
 @media screen and (max-width: 576px) {
   .typewriter {
     font-size: 25px;
@@ -512,11 +578,6 @@ html {
     margin: 25px;
   }
 
-  .card-body p {
-    font-size: 14px;
-    font-weight: bold;
-  }
-
   .service img {
     width: 200px;
   }
@@ -532,24 +593,15 @@ html {
   }
 
   .footer {
-    height: 350px;
+    height: 430px;
   }
-  .footer .row .col-lg-4 {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  .footer .row .col-lg-3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer .row .col-lg-5 span {
-    font-size: 15px;
+  .footer .row .foot a {
+    margin: 10px;
   }
 
-  .navig .col-lg-3 i {
-    color: #212121;
+  .navig {
+    background-color: #212121;
+    opacity: 0.75;
   }
 
   #exampleModal {

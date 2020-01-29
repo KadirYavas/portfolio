@@ -3,21 +3,21 @@ import React, { useState, useEffect } from 'react';
 
 const Nav = () => {
 
-    const [scro, setScro] = useState('')
+    const [scrolle, setScrolle] = useState('')
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
             if(window.scrollY > 520){
-                setScro('stick')
+                setScrolle('stick')
             }
             else {
-                setScro('')
+                setScrolle('')
             }
         })
     })
 
 return (
-<div className={"row navig" + scro}>
+<div className={"row navig " + scrolle}>
     <div className="col-1">
         <span className="spanNav p-3">S.K.Y</span>
     </div>
