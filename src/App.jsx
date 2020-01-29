@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from './components/Header'
 import About from './components/About'
 import Skill from './components/Skill'
@@ -11,7 +11,7 @@ const App = () => {
     useEffect(() => {
         document.title = 'Portfolio Kadir!'
     })
-    
+      
 
     return (
         <div>

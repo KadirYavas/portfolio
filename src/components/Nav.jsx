@@ -17,7 +17,7 @@ const Nav = () => {
     })
 
 return (
-<div className={"row " + scro}>
+<div className={"row navig" + scro}>
     <div className="col-1">
         <span className="spanNav p-3">S.K.Y</span>
     </div>
@@ -51,7 +51,7 @@ return (
             </div>
         </nav>
     </div>
-    <div className="col-3">
+    <div className="col-lg-3">
         <a href="https://www.linkedin.com/in/salih-kadir-yavas/"><i className="fab fa-linkedin-in fa-1x p-4"></i></a>
         <a href="https://www.instagram.com/yavas.03/"><i className="fab fa-instagram fa-1x p-4"></i></a>
         <a href="https://github.com/KadirYavas"><i className="fab fa-github fa-1x p-4"></i></a>
