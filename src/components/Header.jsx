@@ -4,7 +4,7 @@ import Nav from './Nav.jsx'
 const Header = () => {
 return (
 <div id="top" className="fond text-white">
-    <Nav />
+    <Nav /> 
     <div id="rower" className="row text-center">
         <div className="col-12">
             <h1 className="typewriter colorHead font-weight-bold">Salih Kadir YAVAS</h1>
