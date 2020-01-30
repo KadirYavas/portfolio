@@ -61,6 +61,7 @@ const [animGauche, setAnimGauche] = useState('hiddens')
 const [animBas, setAnimBas] = useState('hiddens')
 const [animDroite, setAnimDroite] = useState('hiddens')
 const [animMid, setAnimMid] = useState('hiddens')
+const [roll, setRoll] = useState('hiddens')
 
 useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -70,6 +71,14 @@ useEffect(() => {
             setAnimBas('animated bounceInUp')
             setAnimDroite('animated bounceInRight')
             setAnimMid('animated bounceIn')
+        }
+    })
+})
+
+useEffect(() => {
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 2000){
+            setRoll('animated rollIn')
         }
     })
 })
@@ -88,10 +97,10 @@ return (
 <div id="pro" className="projet p-5">
     <h3 className={"text-center text-uppercase serv " + tit}>Mes projets</h3>
     <ul className="container projet d-flex justify-content-around">
-        <li><button onClick={all} className="btnPro"><span>Tous les projets</span></button></li>
-        <li><button onClick={chef} className="btnPro"><span>Projet: Les Chefs</span></button></li>
-        <li><button onClick={emp} className="btnPro"><span>Projet: Emporium</span></button></li>
-        <li><button onClick={cv} className="btnPro"><span>CV</span></button></li>
+        <li><button onClick={all} className={"btnPro " + roll}><span>Tous les projets</span></button></li>
+        <li><button onClick={chef} className={"btnPro " + roll}><span>Projet: Les Chefs</span></button></li>
+        <li><button onClick={emp} className={"btnPro " + roll}><span>Projet: Emporium</span></button></li>
+        <li><button onClick={cv} className={"btnPro " + roll}><span>CV</span></button></li>
     </ul>
 
     <div className="carousel">

@@ -24,11 +24,13 @@ const Skill = () => {
     }
 
     const [tit, setTit] = useState('hiddens')
+    const [tiet, setTiet] = useState('hiddens')
 
 useEffect(() => {
     window.addEventListener('scroll', () => {
-        if(window.scrollY > 1300){
-            setTit('animated slideInUp')
+        if(window.scrollY > 1400){
+            setTit('animated slideInLeft')
+            setTiet('animated slideInRight')
         }
     })
 })
@@ -38,11 +40,11 @@ useEffect(() => {
 return (
 <div id="skill" className="skill p-5">
     <div className="text-center">
-        <h3 className={"text-uppercase serv " + tit}>Mes compétences</h3>
+        <h3 className={"text-uppercase serv"}>Mes compétences</h3>
     <p className="servp">Voici quelques languages que je pratique dans le développement web.</p>
     </div>
     <div className="row skillImg">
-        <div className="offset-lg-2 col-lg-3">
+        <div className={"offset-lg-2 col-lg-3 " + tit}>
             <div><img src={HTML} alt="" /></div>
             <div><img src={CSS} alt="" /></div>
             <div><img src={BOOTSTRAP} alt="" /></div>
@@ -51,7 +53,7 @@ return (
             <div><img src={SASS} alt=""/></div>
             <div><img src={EMMET} alt=""/></div>
         </div>
-        <div className="col-lg-6 d-flex justify-content-around flex-column">
+        <div className={"col-lg-6 d-flex justify-content-around flex-column " + tiet}>
                 <div className="progress">
                     <div className="progress-bar bg-warning text-danger font-weight-bold" role="progressbar" style={{width: 90 + '%'}} aria-valuenow="90"
                         aria-valuemin="0" aria-valuemax="100">HTML: 90%</div>
