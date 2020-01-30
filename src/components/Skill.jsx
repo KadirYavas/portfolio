@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import HTML from '../img/htmli.png'
 import CSS from '../img/cssi.png'
 import BOOTSTRAP from '../img/bootstrapi.png'
@@ -23,10 +23,22 @@ const Skill = () => {
         setCpt(cpt+1)
     }
 
+    const [tit, setTit] = useState('hiddens')
+
+useEffect(() => {
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 1300){
+            setTit('animated slideInUp')
+        }
+    })
+})
+
+
+
 return (
 <div id="skill" className="skill p-5">
     <div className="text-center">
-        <h3 className="text-uppercase serv">Mes compétences</h3>
+        <h3 className={"text-uppercase serv " + tit}>Mes compétences</h3>
     <p className="servp">Voici quelques languages que je pratique dans le développement web.</p>
     </div>
     <div className="row skillImg">

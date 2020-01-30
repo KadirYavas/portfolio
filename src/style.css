@@ -556,6 +556,10 @@ html {
   height: 580px;
 }
 
+.hiddens {
+  visibility: hidden;
+}
+
 @media screen and (max-width: 576px) {
   .typewriter {
     font-size: 25px;

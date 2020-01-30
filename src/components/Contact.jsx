@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 const Contact = () => {
 
@@ -15,9 +15,19 @@ const clean = () => {
   setText('')
 }
 
+const [tit, setTit] = useState('hiddens')
+
+useEffect(() => {
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 2750){
+            setTit('animated slideInUp')
+        }
+    })
+})
+
 return(
 <div id="contact" className="contact text-center p-5">
-  <h3 className="text-uppercase serv">Contactez-moi !</h3>
+  <h3 className={"text-uppercase serv " + tit}>Contactez-moi !</h3>
   <button className="btnContact" data-toggle="modal" data-target="#exampleModal">
     <span>Affichez le formulaire</span>
   </button>

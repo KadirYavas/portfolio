@@ -9,9 +9,9 @@ import Service from './components/Service';
 
 const App = () => {
     useEffect(() => {
-        document.title = 'Portfolio Kadir!'
+        document.title = 'Thugs Get Lonely Too!'
     })
-      
+    
 
     return (
         <div>

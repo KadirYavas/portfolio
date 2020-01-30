@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 const Nav = () => {
 
     const [scrolle, setScrolle] = useState('')
+    const [aaa, setAaa] = useState('animated jackInTheBox infinite')
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -18,8 +19,8 @@ const Nav = () => {
 
 return (
 <div className={"row navig " + scrolle}>
-    <div className="col-1">
-        <span className="spanNav p-3">S.K.Y</span>
+    <div className={"col-1 " + aaa}>
+        <span className={"spanNav p-3"}>S.K.Y</span>
     </div>
     <div className="col-6 offset-2">
         <nav className="navbar navbar-expand-lg navbar-light">

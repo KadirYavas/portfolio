@@ -1,7 +1,18 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Web from '../img/web.jpg'
 
 const About = () => {
+
+const [tit, setTit] = useState('hiddens')
+
+useEffect(() => {
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 250){
+            setTit('animated slideInUp')
+        }
+    })
+})
+
 return (
 <div id="about" className="about">
     <div className="dev row p-5">
@@ -9,7 +20,7 @@ return (
             <img src={Web} alt="" className="devImg w-50" />
         </div>
         <div className="col-sm-12 col-lg-6 text-center">
-            <h3 className="text-uppercase serv">A propos de moi.</h3>
+            <h3 className={"text-uppercase serv " + tit}>A propos de moi.</h3>
             <p className="pAbout">Je suis un Full-Stack Developer habitant à Bruxelles et ayant étudié à MolenGeek. Sur
                 le plan personnel, je suis très motivé, axé sur les résultats, autonome, travailleur et rapide, je
                 cherche constamment à améliorer mes compétences.</p>

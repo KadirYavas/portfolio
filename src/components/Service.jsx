@@ -1,13 +1,24 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import DEV from '../img/dev.png'
 import SOCIAL from '../img/social.png'
 import RES from '../img/res.png'
 
 const Service = () => {
+
+    const [tit, setTit] = useState('hiddens')
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 700){
+                setTit('animated slideInUp')
+            }
+        })
+    })
+
     return (
         <div id="service">
             <div className="text-center p-4">
-                <h3 className="text-uppercase serv">Service</h3>
+                <h3 className={"text-uppercase serv " + tit}>Service</h3>
                 <p className="servp">Les services que je peux vous offrir.</p>
             </div>
             <div className="service row text-center p-3">

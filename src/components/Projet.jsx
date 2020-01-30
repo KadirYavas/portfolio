@@ -56,27 +56,37 @@ setCarEmp('d-none')
 setCarCV('d-none')
 }
 
-const [animHaut, setAnimHaut] = useState('d-none')
-const [animGauche, setAnimGauche] = useState('d-none')
-const [animBas, setAnimBas] = useState('d-none')
+const [animHaut, setAnimHaut] = useState('hiddens')
+const [animGauche, setAnimGauche] = useState('hiddens')
+const [animBas, setAnimBas] = useState('hiddens')
+const [animDroite, setAnimDroite] = useState('hiddens')
+const [animMid, setAnimMid] = useState('hiddens')
 
 useEffect(() => {
     window.addEventListener('scroll', () => {
-        if(window.scrollY > 2100){
+        if(window.scrollY > 2380){
             setAnimHaut('animated bounceInDown')
-        }
-        else if(window.scrollY > 2300){
             setAnimGauche('animated bounceInLeft')
-        }
-        else if(window.scrollY > 2500){
             setAnimBas('animated bounceInUp')
+            setAnimDroite('animated bounceInRight')
+            setAnimMid('animated bounceIn')
+        }
+    })
+})
+
+const [tit, setTit] = useState('hiddens')
+
+useEffect(() => {
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 1900){
+            setTit('animated slideInUp')
         }
     })
 })
 
 return (
 <div id="pro" className="projet p-5">
-    <h3 className="text-center text-uppercase serv">Mes projets</h3>
+    <h3 className={"text-center text-uppercase serv " + tit}>Mes projets</h3>
     <ul className="container projet d-flex justify-content-around">
         <li><button onClick={all} className="btnPro"><span>Tous les projets</span></button></li>
         <li><button onClick={chef} className="btnPro"><span>Projet: Les Chefs</span></button></li>
@@ -178,31 +188,31 @@ return (
         <div class={"mb-3 pics animation all 1 " + animBas}>
             <img class={"img-fluid " + baseChef} src={chefTrois} alt="Card image cap"></img>
         </div>
-        <div class="mb-3 pics animation all 2">
+        <div class={"mb-3 pics animation all 2 " + animHaut}>
             <img class={"img-fluid " + baseChef} src={chefQuatre} alt="Card image cap"></img>
         </div>
-        <div class={"mb-3 pics animation all 2 " + animBas}>
+        <div class={"mb-3 pics animation all 2 " + animMid}>
             <img class={"img-fluid " + baseChef} src={chefCinq} alt="Card image cap"></img>
         </div>
-        <div class="mb-3 pics animation all 1">
+        <div class={"mb-3 pics animation all 1 " + animMid}>
             <img class={"img-fluid " + baseEmp} src={empUn} alt="Card image cap"></img>
         </div>
-        <div class="mb-3 pics animation all 1">
+        <div class={"mb-3 pics animation all 1 " + animBas}>
             <img class={"img-fluid " + baseEmp} src={empDeux} alt="Card image cap"></img>
         </div>
-        <div class="mb-3 pics animation all 1">
+        <div class={"mb-3 pics animation all 1 " + animHaut}>
             <img class={"img-fluid " + baseEmp} src={empTrois} alt="Card image cap"></img>
         </div>
-        <div class="mb-3 pics animation all 1">
+        <div class={"mb-3 pics animation all 1 " + animDroite}>
             <img class={"img-fluid " + baseEmp} src={empQuatre} alt="Card image cap"></img>
         </div>
-        <div class="mb-3 pics animation all 1">
+        <div class={"mb-3 pics animation all 1 " + animDroite}>
             <img class={"img-fluid " + baseCV} src={cvUn} alt="Card image cap"></img>
         </div>
-        <div class="mb-3 pics animation all 1">
+        <div class={"mb-3 pics animation all 1 " + animDroite}>
             <img class={"img-fluid " + baseCV} src={cvDeux} alt="Card image cap"></img>
         </div>
-        <div class="mb-3 pics animation all 1">
+        <div class={"mb-3 pics animation all 1 " + animBas}>
             <img class={"img-fluid " + baseCV} src={cvQuatre} alt="Card image cap"></img>
         </div>
     </div>
