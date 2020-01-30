@@ -19,9 +19,9 @@ body {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 11px;
+  font-size: 13px;
   font-family: "Poppins", sans-serif;
-  padding: 15px;
+  padding: 10px;
   width: 160px;
   transition: all 0.5s;
   cursor: pointer;
@@ -43,7 +43,7 @@ body {
   transition: 0.5s;
 }
 .btnHeader:hover a {
-  padding-right: 25px;
+  padding-right: 15px;
   color: black;
 }
 .btnHeader:hover a:after {
@@ -181,10 +181,10 @@ body {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   font-family: "Poppins", sans-serif;
-  padding: 15px;
-  width: 160px;
+  padding: 10px;
+  width: 150px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -205,7 +205,7 @@ body {
   transition: 0.5s;
 }
 .btnAbout:hover a {
-  padding-right: 25px;
+  padding-right: 20px;
   color: black;
 }
 .btnAbout:hover a:after {
@@ -234,7 +234,7 @@ body {
   text-align: center;
   font-size: 12px;
   font-family: "Poppins", sans-serif;
-  padding: 15px;
+  padding: 10px;
   width: 160px;
   transition: all 0.5s;
   cursor: pointer;
@@ -324,8 +324,8 @@ body {
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 10px;
-  padding: 15px;
-  width: 260px;
+  padding: 10px;
+  width: 220px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -364,8 +364,8 @@ body {
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 10px;
-  padding: 15px;
-  width: 140px;
+  padding: 12px;
+  width: 120px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -590,6 +590,15 @@ html {
 
   .skillImg .offset-lg-2 {
     text-align: center;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .skillo .col-lg-6 {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .footer {

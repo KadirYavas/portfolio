@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 const Contact = () => {
 
 const end = () => {
 
 alert('Votre message a été envoyé !')
+}
+const [vide, setVide] = useState('')
+const [videDeux, setVideDeux] = useState('')
+const [text, setText] = useState('')
+const clean = () => {
+  setVide('')
+  setVideDeux('')
+  setText('')
 }
 
 return(
@@ -19,7 +27,7 @@ return(
       <div className="modal-content">
         <div className="modal-header">
           <h5 className="modal-title" id="exampleModalLabel">Formulaire de contact</h5>
-          <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <button onClick={clean} type="button" className="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -27,12 +35,12 @@ return(
           <form>
             <div className="form-group">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              <input value={vide} onChange={(e) => setVide(e.target.value)} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="Entrez une adresse mail"></input>
             </div>
             <div className="form-group">
               <label for="exampleInputText1">Nom</label>
-              <input type="tex" className="form-control" id="exampleInputText1" placeholder="Entrez un nom"></input>
+              <input value={videDeux} onChange={(e) => setVideDeux(e.target.value)} type="tex" className="form-control" id="exampleInputText1" placeholder="Entrez un nom"></input>
             </div>
             <div className="form-group">
               <select name="" id="inputState">
@@ -44,7 +52,7 @@ return(
             </div>
             <div className="from-group">
               <label for="exampleInputText2">Message</label>
-              <textarea name="" id="" cols="45" rows="5" placeholder="Saisir votre message ici..."></textarea>
+              <textarea value={text} onChange={(e) => setText(e.target.value)} name="" id="" cols="45" rows="5" placeholder="Saisir votre message ici..."></textarea>
             </div>
             <div className="form-check">
               <input type="checkbox" className="form-check-input" id="exampleCheck1"></input>

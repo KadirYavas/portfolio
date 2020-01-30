@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import chefUn from '../img/Capturechef1.png'
 import chefDeux from '../img/Capturechef2.png'
 import chefTrois from '../img/Capturechef3.png'
@@ -56,6 +56,24 @@ setCarEmp('d-none')
 setCarCV('d-none')
 }
 
+const [animHaut, setAnimHaut] = useState('d-none')
+const [animGauche, setAnimGauche] = useState('d-none')
+const [animBas, setAnimBas] = useState('d-none')
+
+useEffect(() => {
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 2100){
+            setAnimHaut('animated bounceInDown')
+        }
+        else if(window.scrollY > 2300){
+            setAnimGauche('animated bounceInLeft')
+        }
+        else if(window.scrollY > 2500){
+            setAnimBas('animated bounceInUp')
+        }
+    })
+})
+
 return (
 <div id="pro" className="projet p-5">
     <h3 className="text-center text-uppercase serv">Mes projets</h3>
@@ -71,19 +89,19 @@ return (
 
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={chefUn} className="d-block w-50" alt="..."></img>
+                    <img src={chefUn} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={chefDeux} className="d-block w-50" alt="..."></img>
+                    <img src={chefDeux} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={chefTrois} className="d-block w-50" alt="..."></img>
+                    <img src={chefTrois} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={chefQuatre} className="d-block w-50" alt="..."></img>
+                    <img src={chefQuatre} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={chefCinq} className="d-block w-50" alt="..."></img>
+                    <img src={chefCinq} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>
             </div>
             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -102,16 +120,16 @@ return (
 
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={empUn} className="d-block w-50" alt="..."></img>
+                    <img src={empUn} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={empDeux} className="d-block w-50" alt="..."></img>
+                    <img src={empDeux} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={empTrois} className="d-block w-50" alt="..."></img>
+                    <img src={empTrois} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={empQuatre} className="d-block w-50" alt="..."></img>
+                    <img src={empQuatre} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>
             </div>
             <a className="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
@@ -130,13 +148,13 @@ return (
 
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={cvUn} className="d-block w-50" alt="..."></img>
+                    <img src={cvUn} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={cvDeux} className="d-block w-50" alt="..."></img>
+                    <img src={cvDeux} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={cvQuatre} className="d-block w-50" alt="..."></img>
+                    <img src={cvQuatre} className="d-block w-50 img-fluid" alt="..."></img>
                 </div>-
             </div>
             <a className="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
@@ -151,19 +169,19 @@ return (
     </div>
 
     <div class="gallery text-center " id="gallery">
-        <div class="mb-3 pics animation all 2">
+        <div class={"mb-3 pics animation all 2 " + animHaut}>
             <img class={"img-fluid " + baseChef} src={chefUn} alt="Card image cap"></img>
         </div>
-        <div class="mb-3 pics animation all 1">
+        <div class={"mb-3 pics animation all 1 " + animGauche}>
             <img class={"img-fluid " + baseChef} src={chefDeux} alt="Card image cap"></img>
         </div>
-        <div class="mb-3 pics animation all 1">
+        <div class={"mb-3 pics animation all 1 " + animBas}>
             <img class={"img-fluid " + baseChef} src={chefTrois} alt="Card image cap"></img>
         </div>
         <div class="mb-3 pics animation all 2">
             <img class={"img-fluid " + baseChef} src={chefQuatre} alt="Card image cap"></img>
         </div>
-        <div class="mb-3 pics animation all 2">
+        <div class={"mb-3 pics animation all 2 " + animBas}>
             <img class={"img-fluid " + baseChef} src={chefCinq} alt="Card image cap"></img>
         </div>
         <div class="mb-3 pics animation all 1">

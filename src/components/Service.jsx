@@ -14,17 +14,17 @@ const Service = () => {
                 <div className="col-sm-12 col-lg-4">
                     <img src={DEV} alt="" className="p-3 imgDev"/>
                     <h4 className="serv">Website Development</h4>
-                    <p className="servp">The web development process involves taking the graphical elements defined in the design process and coding them into a custom Wordpress theme.</p>
+                    <p className="servp">Le processus de développement web implique de prendre les éléments graphiques définis dans le processus de conception et de les coder dans un thème Wordpress personnalisé.</p>
                 </div>
                 <div className="col-sm-12 col-lg-4">
                     <img src={SOCIAL} alt="" className="p-3 imgDev"/>
                     <h4 className="serv">Social Media Integration</h4>
-                    <p className="servp">Social media integration enables your website to post updates to Facebook, displays a Twitter feed, and links to your social media accounts.</p>
+                    <p className="servp">L’intégration des médias sociaux permet à votre site Web de publier des mises à jour sur Facebook, d’afficher un fil Twitter et de créer des liens vers vos comptes de médias sociaux.</p>
                 </div>
                 <div className="col-sm-12 col-lg-4">
                     <img src={RES} alt="" className="p-3 imgDev"/>
                     <h4 className="serv">Responsive Website Design</h4>
-                    <p className="servp">Having a responsive layout means that your website fluidly resizes for optimal viewing regardless of the screen size or device (e.g. iPhone, iPad).</p>
+                    <p className="servp">Avoir une mise en page réactive signifie que votre site Web redimensionne facilement pour une visualisation optimale indépendamment de la taille de l’écran ou de l’appareil (par ex. iPhone, iPad).</p>
                 </div>
             </div>
         </div>
