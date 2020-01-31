@@ -22,7 +22,7 @@ return (
     <div className={"col-1 " + aaa}>
         <span className={"spanNav p-3"}>S.K.Y</span>
     </div>
-    <div className="col-6 offset-2">
+    <div className="col-lg-6 col-md-10 offset-2">
         <nav className="navbar navbar-expand-lg navbar-light">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

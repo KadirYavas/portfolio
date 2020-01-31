@@ -12,7 +12,6 @@ const App = () => {
         document.title = 'Thugs Get Lonely Too!'
     })
     
-
     return (
         <div>
             <Header />
