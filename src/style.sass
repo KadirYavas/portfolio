@@ -5,17 +5,17 @@ $grey: #F6F7FA
 $text: 'Varela Round', sans-serif
 $titre: 'Raleway', sans-serif
 $btn: 'Poppins', sans-serif
-	
+
 body
 	overflow-x: hidden
-.fond 
-	background-image: url('./img/comp.jpg') 
-	background-repeat: no-repeat 
-	background-size: cover 
-	background-position: center 
-	height: 700px 
-	background-color: #BD584E			 
-.btnHeader 
+.fond
+	background-image: url('./img/comp.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	height: 700px
+	background-color: #BD584E
+.btnHeader
 	display: inline-block
 	border-radius: 50px
 	background-color: #BD58
@@ -35,112 +35,112 @@ body
 		position: relative
 		transition: 0.5s
 		color: white
-		&:after 
-			content: '\00bb' 
-			position: absolute 
-			opacity: 0 
-			top: 0 
-			right: -20px 
-			transition: 0.5s 
-	&:hover 
+		&:after
+			content: '\00bb'
+			position: absolute
+			opacity: 0
+			top: 0
+			right: -20px
+			transition: 0.5s
+	&:hover
 		a
 			padding-right: 15px
-			color: black 
-			&:after 
-				opacity: 1 
+			color: black
+			&:after
+				opacity: 1
 				right: 0
-#rower 
-	height: 500px 
+#rower
+	height: 500px
 	display: flex
 	align-content: center
-.colorHead 
+.colorHead
 	color: $servColor
 	font-family: $text
 	animation: opacityPulse 2s ease-out
 	animation-iteration-count: infinite
 	opacity: 1
 @keyframes opacityPulse
-	0% 
+	0%
 		opacity: 0.0
-	50% 
+	50%
 		opacity: 0.75
-	100% 
+	100%
 		opacity: 0.0
-.typewriter 
-	color: #fff 
-	font-family: $text 
-	overflow: hidden 
-	border-right: .10em solid orange 
-	white-space: nowrap 
-	margin: 0 auto 
-	max-width: max-content 
-	letter-spacing: .15em 
-	animation: typing 2s steps(100, end), blink-caret .9s step-end infinite 
-@keyframes typing 
-	from 
+.typewriter
+	color: #fff
+	font-family: $text
+	overflow: hidden
+	border-right: .10em solid orange
+	white-space: nowrap
+	margin: 0 auto
+	max-width: max-content
+	letter-spacing: .15em
+	animation: typing 2s steps(100, end), blink-caret .9s step-end infinite
+@keyframes typing
+	from
 		width: 0%
-	to 
-		width: 50% 
+	to
+		width: 50%
 
-@keyframes blink-caret 
+@keyframes blink-caret
 	from,
-	to 
+	to
 		border-color: transparent
 	50%
-		border-color: orange  
+		border-color: orange
 .navig
-	.col-lg-3 
-		i 
+	.col-lg-3
+		i
 			color: $pepe
 		.fa-linkedin-in
 			&:hover
 				color: blue
-		.fa-instagram 
-			&:hover 
+		.fa-instagram
+			&:hover
 				color: red
-		.fa-github 
-			&:hover 
+		.fa-github
+			&:hover
 				color: black
-.stick 
+.stick
 	position: fixed
 	z-index: 2
 	background-color: #212121
 	opacity: 0.55
 	height: 55px
 	width: 105%
-	.spanNav 
+	.spanNav
 		color: white
-	.col-lg-3 
-		i 
+	.col-lg-3
+		i
 			color: $pepe
 		.fa-linkedin-in
-				color: white
-		.fa-instagram  
-				color: white
-		.fa-github  
-				color: white
-.spanNav 
-	font-size: 40px 
-	color: black 
-	font-family: 'Indie Flower', cursive 
-.nav-link 
-	font-size: 20px 
+			color: white
+		.fa-instagram
+			color: white
+		.fa-github
+			color: white
+.spanNav
+	font-size: 40px
+	color: black
+	font-family: 'Indie Flower', cursive
+.nav-link
+	font-size: 20px
 	margin: 0px 10px
 	font-family: $text
-#navbarText 
-	a 
+#navbarText
+	a
 		color: $servColor
-		&:hover 
-			color: #BD584E 
-.fab 
-	color: white 
-.about 
+		&:hover
+			color: #BD584E
+.fab
+	color: white
+.about
 	background-color: $rose
-.pAbout 
+.pAbout
 	text-align: center
 	color: $pepe
 	font-family: $text
-.btnAbout 
+.btnAbout
 	display: inline-block
 	border-radius: 50px
 	background-color: #a1c53788
@@ -160,25 +160,25 @@ body
 		position: relative
 		transition: 0.5s
 		color: #bd584e
-		&:after 
-			content: '\00bb' 
-			position: absolute 
-			opacity: 0 
-			top: 0 
-			right: -20px 
-			transition: 0.5s 
-	&:hover 
-		a 
+		&:after
+			content: '\00bb'
+			position: absolute
+			opacity: 0
+			top: 0
+			right: -20px
+			transition: 0.5s
+	&:hover
+		a
 			padding-right: 20px
-			color: black 
-			&:after 
-				opacity: 1 
+			color: black
+			&:after
+				opacity: 1
 				right: 0
-.skill 
+.skill
 	background-color: $rose
-	padding: 25px 
+	padding: 25px
 .skillImg
-	img 
+	img
 		width: 45px
 .projet
 	background-color: $grey
@@ -202,57 +202,57 @@ body
 			position: relative
 			transition: 0.5s
 			color: #bd584e
-			&:after 
-				content: '\00bb' 
-				position: absolute 
-				opacity: 0 
-				top: 0 
-				right: -20px 
-				transition: 0.5s 
-		&:hover 
-			span 
+			&:after
+				content: '\00bb'
+				position: absolute
+				opacity: 0
+				top: 0
+				right: -20px
+				transition: 0.5s
+		&:hover
+			span
 				padding-right: 25px
-				color: black 
-				&:after 
-					opacity: 1 
+				color: black
+				&:after
+					opacity: 1
 					right: 0
-	li 
+	li
 		list-style: none
-	img 
+	img
 		width: 50%
-	.gallery 
-		-webkit-column-count: 3 
-		-moz-column-count: 3 
-		column-count: 3 
-		-webkit-column-width: 33% 
-		-moz-column-width: 33% 
-		column-width: 33% 
-		.pics 
-			transition: all 350ms ease 
-		.animation 
-			transform: scale(1) 
-@media (max-width &: 450px) 
-	.gallery 
-		-webkit-column-count: 1 
-		-moz-column-count: 1 
-		column-count: 1 
-		-webkit-column-width: 100% 
-		-moz-column-width: 100% 
-		column-width: 100% 
-@media (max-width &: 400px) 
-	.btn.filter 
-		padding-left: 1.1rem 
-		padding-right: 1.1rem 
+	.gallery
+		-webkit-column-count: 3
+		-moz-column-count: 3
+		column-count: 3
+		-webkit-column-width: 33%
+		-moz-column-width: 33%
+		column-width: 33%
+		.pics
+			transition: all 350ms ease
+		.animation
+			transform: scale(1)
+@media (max-width &: 450px)
+	.gallery
+		-webkit-column-count: 1
+		-moz-column-count: 1
+		column-count: 1
+		-webkit-column-width: 100%
+		-moz-column-width: 100%
+		column-width: 100%
+@media (max-width &: 400px)
+	.btn.filter
+		padding-left: 1.1rem
+		padding-right: 1.1rem
 .contact
 	background-color: $rose
-.footer 
+.footer
 	background-color: #161616
 	height: 240px
 .spanNave
-	font-size: 40px 
-	color: white 
+	font-size: 40px
+	color: white
 	font-family: 'Indie Flower', cursive
-.btnContact 
+.btnContact
 	display: inline-block
 	border-radius: 50px
 	background-color: #a1c53788
@@ -273,21 +273,21 @@ body
 		transition: 0.5s
 		color: #bd584e
 		font-size: 15px
-		&:after 
-			content: '\00bb' 
-			position: absolute 
-			opacity: 0 
-			top: 0 
-			right: -20px 
-			transition: 0.5s 
-	&:hover 
+		&:after
+			content: '\00bb'
+			position: absolute
+			opacity: 0
+			top: 0
+			right: -20px
+			transition: 0.5s
+	&:hover
 		span
 			padding-right: 25px
-			color: black 
-			&:after 
-				opacity: 1 
+			color: black
+			&:after
+				opacity: 1
 				right: 0
-.btnContacte 
+.btnContacte
 	display: inline-block
 	border-radius: 50px
 	background-color: #a1c53788
@@ -308,36 +308,36 @@ body
 		transition: 0.5s
 		color: #bd584e
 		font-size: 15px
-		&:after 
-			content: '\00bb' 
-			position: absolute 
-			opacity: 0 
-			top: 0 
-			right: -20px 
+		&:after
+			content: '\00bb'
+			position: absolute
+			opacity: 0
+			top: 0
+			right: -20px
 			transition: 0.5s
-	&:hover 
+	&:hover
 		span
 			padding-right: 25px
-			color: black 
-			&:after 
-				opacity: 1 
+			color: black
+			&:after
+				opacity: 1
 				right: 0
-.serv 
+.serv
 	color: $servColor
 	font-family: $titre
-.servp 
+.servp
 	color: $pepe
 	font-family: $text
-#service 
+#service
 	background-color: $grey
-html 
+html
 	scroll-behavior: smooth
-.carousel-item 
-	img 
+.carousel-item
+	img
 		margin: 0 auto
-.imgDev 
+.imgDev
 	transition: transform .8s ease-in-out
-	&:hover 
+	&:hover
 		transform: rotate(360deg)
 #cf img
 	animation-name: cf3FadeInOut
@@ -346,15 +346,15 @@ html
 	animation-duration: 2s
 	animation-direction: alternate
 @keyframes cf3FadeInOut
-	0% 
-		opacity:1
-	45% 
-		opacity:0.75
-	55% 
-		opacity:0.50
-	100% 
-		opacity:0
-.foot .link 
+	0%
+		opacity: 1
+	45%
+		opacity: 0.75
+	55%
+		opacity: 0.50
+	100%
+		opacity: 0
+.foot .link
 	display: inline-block
 	vertical-align: middle
 	position: relative
@@ -380,7 +380,7 @@ html
 	top: 50%
 	left: 50%
 	transform: translate(-50%, -50%)
-.foot .insta 
+.foot .insta
 	display: inline-block
 	vertical-align: middle
 	position: relative
@@ -405,7 +405,7 @@ html
 	top: 50%
 	left: 50%
 	transform: translate(-50%, -50%)
-.foot .git 
+.foot .git
 	display: inline-block
 	vertical-align: middle
 	position: relative
@@ -430,58 +430,58 @@ html
 	top: 50%
 	left: 50%
 	transform: translate(-50%, -50%)
-.form 
+.form
 	background-color: rgb(0, 0, 0, 0.05)
 .skillo
-	img 
+	img
 		width: 65px
-.card-body 
-		font-weight: bold
-		ul 
-			li 
-				list-style: none
-#contact .fade 
+.card-body
+	font-weight: bold
+	ul
+		li
+			list-style: none
+#contact .fade
 	height: 580px
-.hiddens 
+.hiddens
 	visibility: hidden
 @media screen and (max-width: 576px)
-	.typewriter 
+	.typewriter
 		font-size: 25px
-	#rower 
+	#rower
 		height: 190px
 	.fond
 		height: 500px
-	.dev 
+	.dev
 		display: flex
 		flex-direction: column
 		align-items: center
-		.devImg	
+		.devImg
 			margin: 25px
-	.service 
-		img 
+	.service
+		img
 			width: 200px
-	.projet 
+	.projet
 		display: flex
 		flex-direction: column
 		align-items: center
-	.skillImg 
-		.offset-lg-2 
+	.skillImg
+		.offset-lg-2
 			text-align: center
 			display: flex
 			margin-top: 15px
 			margin-bottom: 15px
-	.skillo 
+	.skillo
 		.col-lg-6
 			display: flex
 			margin-top: 15px
 			margin-bottom: 15px
-	.footer 
+	.footer
 		height: 430px
-		.row 
-			.foot 
-				a 
+		.row
+			.foot
+				a
 					margin: 10px
-	.navig 
+	.navig
 		background-color: #212121
 		opacity: 0.85
 		position: fixed
@@ -489,27 +489,50 @@ html
 		z-index: 3
 		.spanNav
 			color: white
-		.col-lg-3 
-			i 
+		.col-lg-3
+			i
 				color: white
 	#rower
-		.col-12 
+		.col-12
 			position: absolute
 			top: 20%
 			left: 1%
-	#exampleModal 
+	#exampleModal
 		width: 375px
-		input 
+		input
 			width: 200px
 			margin: auto
-		textarea 
+		textarea
 			display: flex
 			width: 300px
 			margin: auto
 		.form-check
 			display: flex
 			align-items: center
-			input 
+			input
 				margin-left: 125px
 	.stick
 		height: 120px
+
+body
+	background-color: #1b1b1d
+	min-height: 100vh
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	&:after
+		content: ''
+		background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/texture.svg)
+		position: fixed
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		z-index: 999
+		pointer-events: none
+		opacity: 0.2
+		filter: invert(1)
+		background-size: cover

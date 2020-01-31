@@ -17,6 +17,8 @@ const Nav = () => {
         })
     })
 
+
+
 return (
 <div className={"row navig " + scrolle}>
     <div className={"col-1 " + aaa}>
