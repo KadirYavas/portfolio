@@ -623,6 +623,9 @@ html {
     flex-direction: column;
     align-items: center;
   }
+  .projet .carousel .slide .carousel-inner .carousel-item img {
+    width: 300px;
+  }
 
   .skillImg .offset-lg-2 {
     text-align: center;

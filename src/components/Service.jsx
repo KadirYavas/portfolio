@@ -33,13 +33,13 @@ const Service = () => {
                 </div>
                 <div className={"col-sm-12 col-lg-4 " + tilt}>
                     <img src={SOCIAL} alt="" className="p-3 imgDev"/>
-                    <h4 className="serv">Social Media Integration</h4>
-                    <p className="servp">L’intégration des médias sociaux permet à votre site Web de publier des mises à jour sur Facebook, d’afficher un fil Twitter et de créer des liens vers vos comptes de médias sociaux.</p>
+                    <h4 className="serv">Social Network Integration</h4>
+                    <p className="servp">L’intégration des médias sociaux permet à votre site Web de publier des mises à jour sur Facebook, d’afficher un fil Twitter et de créer des liens vers vos comptes de réseaux sociaux.</p>
                 </div>
                 <div className={"col-sm-12 col-lg-4 " + tit}>
                     <img src={RES} alt="" className="p-3 imgDev"/>
                     <h4 className="serv">Responsive Website Design</h4>
-                    <p className="servp">Avoir une mise en page réactive signifie que votre site Web redimensionne facilement pour une visualisation optimale indépendamment de la taille de l’écran ou de l’appareil (par ex. iPhone, iPad).</p>
+                    <p className="servp">Avoir une mise en page réactive signifie que votre site Web redimensionne facilement pour une visualisation optimale indépendamment de la taille de l’écran ou de l’appareil (par ex. tablette, mobile).</p>
                 </div>
             </div>
         </div>

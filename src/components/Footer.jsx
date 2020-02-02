@@ -14,7 +14,7 @@ const Footer = () => {
                         <span className="spanNave p-5">S.K.Y</span>
                     </div>
                     
-                    <i className="fas fa-at fa-1x text-danger">   yavas00@hotmail.com</i><br/>
+                    <i className="fas fa-envelope-open-text fa-1x text-danger">   yavas00@hotmail.com</i><br/>
                     <i className="fas fa-phone-volume fa-1x text-danger"> (+32) 486 90 50 69</i>
                 </div>
                 <div className="col-sm-12 col-lg-4 foot text-center">

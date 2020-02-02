@@ -98,19 +98,19 @@ return (
 
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={chefUn} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={chefUn} className="d-block img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={chefDeux} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={chefDeux} className="d- img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={chefTrois} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={chefTrois} className="d- img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={chefQuatre} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={chefQuatre} className="d- img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={chefCinq} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={chefCinq} className="d- img-fluid" alt="..."></img>
                 </div>
             </div>
             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -131,16 +131,16 @@ return (
 
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={empUn} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={empUn} className="d-block img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={empDeux} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={empDeux} className="d-block img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={empTrois} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={empTrois} className="d-block img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={empQuatre} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={empQuatre} className="d-block img-fluid" alt="..."></img>
                 </div>
             </div>
             <a className="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
@@ -161,13 +161,13 @@ return (
 
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={cvUn} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={cvUn} className="d-block img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={cvDeux} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={cvDeux} className="d-block img-fluid" alt="..."></img>
                 </div>
                 <div className="carousel-item">
-                    <img src={cvQuatre} className="d-block w-50 img-fluid" alt="..."></img>
+                    <img src={cvQuatre} className="d-block img-fluid" alt="..."></img>
                 </div>-
             </div>
             <a className="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
