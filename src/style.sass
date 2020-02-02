@@ -104,12 +104,15 @@ body
 .stick
 	position: fixed
 	z-index: 2
-	background-color: #212121
 	opacity: 0.55
 	height: 55px
 	width: 105%
-	.spanNav
-		color: white
+	.col-lg-8
+		ul 
+			li 
+				box-shadow: 10px 5px 5px #bd584e
+				a 
+					font-weight: bold
 	.col-lg-3
 		i
 			color: $pepe
@@ -129,7 +132,7 @@ body
 	font-family: $text
 #navbarText
 	a
-		color: $servColor
+		color: #212121
 		&:hover
 			color: #BD584E
 .fab
@@ -511,8 +514,6 @@ html
 		position: fixed
 		top: 0
 		z-index: 3
-		.spanNav
-			color: white
 		.col-lg-8
 			.navbar
 				.collapse 

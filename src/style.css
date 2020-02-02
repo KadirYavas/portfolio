@@ -120,13 +120,15 @@ body {
 .stick {
   position: fixed;
   z-index: 2;
-  background-color: #212121;
   opacity: 0.55;
   height: 55px;
   width: 105%;
 }
-.stick .spanNav {
-  color: white;
+.stick .col-lg-8 ul li {
+  box-shadow: 10px 5px 5px #bd584e;
+}
+.stick .col-lg-8 ul li a {
+  font-weight: bold;
 }
 .stick .col-lg-3 i {
   color: #525D68;
@@ -154,7 +156,7 @@ body {
 }
 
 #navbarText a {
-  color: #06BC9B;
+  color: #212121;
 }
 #navbarText a:hover {
   color: #BD584E;
@@ -647,9 +649,6 @@ html {
     position: fixed;
     top: 0;
     z-index: 3;
-  }
-  .navig .spanNav {
-    color: white;
   }
   .navig .col-lg-8 .navbar .collapse ul li {
     background-color: #212121;
