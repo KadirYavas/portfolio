@@ -12,13 +12,13 @@ import VS from '../img/vs.png'
 
 const Skill = () => {
 
-    const [non, setNon] = useState('d-none')
+    const [show, setShow] = useState(false)
     const [cpt, setCpt] = useState(0)
     const clicke = () => {
         if(cpt % 2 === 0){
-            setNon('')
+            setShow(true)
         } else{
-            setNon('d-none')
+            setShow(false)
         }
         setCpt(cpt+1)
     }
@@ -88,7 +88,8 @@ return (
     <div className="text-center">
         <h3 className="serv">En voici d'autres:</h3>
         <button onClick={clicke} className="btnContacte"><span>Afficher</span></button>
-        <div className={"row skillo m-3 " + non}>
+        {show == true && 
+<div className={"row skillo m-3"}>
             <div className="col-lg-6">
                 <div><img src={BASH} alt="" /></div>
                 <div><img src={GIT} alt="" /></div>
@@ -112,6 +113,8 @@ return (
             </div>
             
         </div>
+        }
+        
     </div>
     
 </div>

@@ -14,46 +14,35 @@ import cvQuatre from '../img/cv4.png'
 
 const Projet = () => {
 
-const [baseChef, setBaseChef] = useState('')
-const [baseEmp, setBaseEmp] = useState('')
-const [baseCV, setBaseCV] = useState('')
-
-const [carChef, setCarChef] = useState('d-none')
-const [carEmp, setCarEmp] = useState('d-none')
-const [carCV, setCarCV] = useState('d-none')
+    const [hide, setHide] = useState(true)
+    const [carUn, setCarUn] = useState(false)
+    const [carDeux, setCarDeux] = useState(false)
+    const [carTrois, setCarTrois] = useState(false)
 
 
 const chef = () => {
-setBaseEmp('d-none')
-setBaseCV('d-none')
-setBaseChef('d-none')
-setCarEmp('d-none')
-setCarCV('d-none')
-setCarChef('')
+    setCarUn(true)
+    setHide(false)
+    setCarDeux(false)
+    setCarTrois(false)
 }
 const emp = () => {
-setBaseChef('d-none')
-setBaseCV('d-none')
-setBaseEmp('d-none')
-setCarChef('d-none')
-setCarCV('d-none')
-setCarEmp('')
+    setCarDeux(true)
+    setHide(false)
+    setCarUn(false)
+    setCarTrois(false)
 }
 const cv = () => {
-setBaseChef('d-none')
-setBaseEmp('d-none')
-setBaseCV('d-none')
-setCarChef('d-none')
-setCarEmp('d-none')
-setCarCV('')
+    setCarTrois(true)
+    setHide(false)
+    setCarUn(false)
+    setCarDeux(false)
 }
 const all = () => {
-setBaseChef('')
-setBaseEmp('')
-setBaseCV('')
-setCarChef('d-none')
-setCarEmp('d-none')
-setCarCV('d-none')
+    setHide(true)
+    setCarUn(false)
+    setCarDeux(false)
+    setCarTrois(false)
 }
 
 const [animHaut, setAnimHaut] = useState('hiddens')
@@ -104,7 +93,8 @@ return (
     </ul>
 
     <div className="carousel">
-        <div id="carouselExampleIndicators" className={"carousel slide " + carChef} data-ride=" carousel">
+        {carUn == true &&
+<div id="carouselExampleIndicators" className={"carousel slide "} data-ride=" carousel">
 
             <div className="carousel-inner">
                 <div className="carousel-item active">
@@ -132,10 +122,12 @@ return (
                 <span className="sr-only">Next</span>
             </a>
         </div>
+        }
+        
 
 
-
-        <div id="carouselExampleIndicators2" className={"carousel slide " + carEmp} data-ride=" carousel">
+        {carDeux == true &&
+<div id="carouselExampleIndicators2" className={"carousel slide "} data-ride=" carousel">
 
             <div className="carousel-inner">
                 <div className="carousel-item active">
@@ -160,10 +152,12 @@ return (
                 <span className="sr-only">Next</span>
             </a>
         </div>
+        }
+        
 
 
-
-        <div id="carouselExampleIndicators3" className={"carousel slide text-center " + carCV} data-ride=" carousel">
+        {carTrois == true && 
+ <div id="carouselExampleIndicators3" className={"carousel slide text-center "} data-ride=" carousel">
 
             <div className="carousel-inner">
                 <div className="carousel-item active">
@@ -185,46 +179,50 @@ return (
                 <span className="sr-only">Next</span>
             </a>
         </div>
+        }
+       
     </div>
-
-    <div class="gallery text-center " id="gallery">
+    {hide == true && 
+<div class="gallery text-center " id="gallery">
         <div class={"mb-3 pics animation all 2 " + animHaut}>
-            <img class={"img-fluid " + baseChef} src={chefUn} alt="Card image cap"></img>
+            <img class={"img-fluid " } src={chefUn} alt="Card image cap"></img>
         </div>
         <div class={"mb-3 pics animation all 1 " + animGauche}>
-            <img class={"img-fluid " + baseChef} src={chefDeux} alt="Card image cap"></img>
+            <img class={"img-fluid " } src={chefDeux} alt="Card image cap"></img>
         </div>
         <div class={"mb-3 pics animation all 1 " + animBas}>
-            <img class={"img-fluid " + baseChef} src={chefTrois} alt="Card image cap"></img>
+            <img class={"img-fluid " } src={chefTrois} alt="Card image cap"></img>
         </div>
         <div class={"mb-3 pics animation all 2 " + animHaut}>
-            <img class={"img-fluid " + baseChef} src={chefQuatre} alt="Card image cap"></img>
+            <img class={"img-fluid " } src={chefQuatre} alt="Card image cap"></img>
         </div>
         <div class={"mb-3 pics animation all 2 " + animMid}>
-            <img class={"img-fluid " + baseChef} src={chefCinq} alt="Card image cap"></img>
+            <img class={"img-fluid " } src={chefCinq} alt="Card image cap"></img>
         </div>
         <div class={"mb-3 pics animation all 1 " + animMid}>
-            <img class={"img-fluid " + baseEmp} src={empUn} alt="Card image cap"></img>
+            <img class={"img-fluid "} src={empUn} alt="Card image cap"></img>
         </div>
         <div class={"mb-3 pics animation all 1 " + animBas}>
-            <img class={"img-fluid " + baseEmp} src={empDeux} alt="Card image cap"></img>
+            <img class={"img-fluid "} src={empDeux} alt="Card image cap"></img>
         </div>
         <div class={"mb-3 pics animation all 1 " + animHaut}>
-            <img class={"img-fluid " + baseEmp} src={empTrois} alt="Card image cap"></img>
+            <img class={"img-fluid "} src={empTrois} alt="Card image cap"></img>
         </div>
         <div class={"mb-3 pics animation all 1 " + animDroite}>
-            <img class={"img-fluid " + baseEmp} src={empQuatre} alt="Card image cap"></img>
+            <img class={"img-fluid "} src={empQuatre} alt="Card image cap"></img>
         </div>
         <div class={"mb-3 pics animation all 1 " + animDroite}>
-            <img class={"img-fluid " + baseCV} src={cvUn} alt="Card image cap"></img>
+            <img class={"img-fluid "} src={cvUn} alt="Card image cap"></img>
         </div>
         <div class={"mb-3 pics animation all 1 " + animDroite}>
-            <img class={"img-fluid " + baseCV} src={cvDeux} alt="Card image cap"></img>
+            <img class={"img-fluid "} src={cvDeux} alt="Card image cap"></img>
         </div>
         <div class={"mb-3 pics animation all 1 " + animBas}>
-            <img class={"img-fluid " + baseCV} src={cvQuatre} alt="Card image cap"></img>
+            <img class={"img-fluid "} src={cvQuatre} alt="Card image cap"></img>
         </div>
     </div>
+    }
+    
 
 </div>
 )
