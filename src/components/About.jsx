@@ -21,7 +21,7 @@ return (
         <div id="cf" className={"col-sm-12 col-lg-6 text-center " + tit}>
             <img src={Web} alt="" className="devImg w-50" />
         </div>
-        <div className={"col-sm-12 col-lg-6 text-center " + tite}>
+        <div className={"mo col-sm-12 col-lg-6 text-center " + tite}>
             <h3 className={"text-uppercase serv " + tit}>A propos de moi.</h3>
             <p className="pAbout">Je suis un Full-Stack Developer habitant à Bruxelles et ayant étudié à MolenGeek. Sur
                 le plan personnel, je suis très motivé, axé sur les résultats, autonome, travailleur et rapide, je
