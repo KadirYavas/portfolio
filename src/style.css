@@ -651,8 +651,8 @@ html {
     z-index: 3;
   }
   .navig .col-lg-8 .navbar .collapse ul li {
-    background-color: #212121;
-    width: 35%;
+    background-color: #fff;
+    width: 30%;
   }
 
   #rower .col-12 {
