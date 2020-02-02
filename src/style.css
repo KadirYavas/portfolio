@@ -560,6 +560,36 @@ html {
   visibility: hidden;
 }
 
+.propro {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.columnpro {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.columnpro img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .columnpro {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .columnpro {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 576px) {
   .typewriter {
     font-size: 25px;
@@ -613,7 +643,6 @@ html {
   }
 
   .navig {
-    background-color: #212121;
     opacity: 0.85;
     position: fixed;
     top: 0;
@@ -622,8 +651,9 @@ html {
   .navig .spanNav {
     color: white;
   }
-  .navig .col-lg-3 i {
-    color: white;
+  .navig .col-lg-8 .navbar .collapse ul li {
+    background-color: #212121;
+    width: 35%;
   }
 
   #rower .col-12 {

@@ -183,44 +183,25 @@ return (
        
     </div>
     {hide == true && 
-<div class="gallery text-center " id="gallery">
-        <div class={"mb-3 pics animation all 2 " + animHaut}>
-            <img class={"img-fluid " } src={chefUn} alt="Card image cap"></img>
-        </div>
-        <div class={"mb-3 pics animation all 1 " + animGauche}>
-            <img class={"img-fluid " } src={chefDeux} alt="Card image cap"></img>
-        </div>
-        <div class={"mb-3 pics animation all 1 " + animBas}>
-            <img class={"img-fluid " } src={chefTrois} alt="Card image cap"></img>
-        </div>
-        <div class={"mb-3 pics animation all 2 " + animHaut}>
-            <img class={"img-fluid " } src={chefQuatre} alt="Card image cap"></img>
-        </div>
-        <div class={"mb-3 pics animation all 2 " + animMid}>
-            <img class={"img-fluid " } src={chefCinq} alt="Card image cap"></img>
-        </div>
-        <div class={"mb-3 pics animation all 1 " + animMid}>
-            <img class={"img-fluid "} src={empUn} alt="Card image cap"></img>
-        </div>
-        <div class={"mb-3 pics animation all 1 " + animBas}>
-            <img class={"img-fluid "} src={empDeux} alt="Card image cap"></img>
-        </div>
-        <div class={"mb-3 pics animation all 1 " + animHaut}>
-            <img class={"img-fluid "} src={empTrois} alt="Card image cap"></img>
-        </div>
-        <div class={"mb-3 pics animation all 1 " + animDroite}>
-            <img class={"img-fluid "} src={empQuatre} alt="Card image cap"></img>
-        </div>
-        <div class={"mb-3 pics animation all 1 " + animDroite}>
-            <img class={"img-fluid "} src={cvUn} alt="Card image cap"></img>
-        </div>
-        <div class={"mb-3 pics animation all 1 " + animDroite}>
-            <img class={"img-fluid "} src={cvDeux} alt="Card image cap"></img>
-        </div>
-        <div class={"mb-3 pics animation all 1 " + animBas}>
-            <img class={"img-fluid "} src={cvQuatre} alt="Card image cap"></img>
-        </div>
+    <div class="row propro">
+    <div class="columnpro">
+      <img src={chefUn}></img>
+      <img src={chefDeux}></img>
+      <img src={chefTrois}></img>
     </div>
+    <div class="columnpro">
+      <img src={chefCinq}></img>
+      <img src={empUn}></img>
+      <img src={empDeux}></img>
+      <img src={empTrois}></img>
+    </div>
+    <div class="columnpro">
+      <img src={empQuatre}></img>
+      <img src={cvUn}></img>
+      <img src={cvDeux}></img>
+      <img src={cvQuatre}></img>
+    </div>
+  </div>
     }
     
 

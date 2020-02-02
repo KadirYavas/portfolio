@@ -20,11 +20,11 @@ const Nav = () => {
 
 
 return (
-<div className={"row navig " + scrolle}>
-    <div className={"col-1 " + aaa}>
+<div className={"row navig d-flex justify-content-around " + scrolle}>
+    <div className={"col-lg-2 " + aaa}>
         <span className={"spanNav p-3"}>S.K.Y</span>
     </div>
-    <div className="col-lg-6 col-md-10 offset-2">
+    <div className="col-lg-8 col-md-10">
         <nav className="navbar navbar-expand-lg navbar-light">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,11 +53,6 @@ return (
                 </ul>
             </div>
         </nav>
-    </div>
-    <div className="col-lg-3">
-        <a href="https://www.linkedin.com/in/salih-kadir-yavas/"><i className="fab fa-linkedin-in fa-1x p-4"></i></a>
-        <a href="https://www.instagram.com/yavas.03/"><i className="fab fa-instagram fa-1x p-4"></i></a>
-        <a href="https://github.com/KadirYavas"><i className="fab fa-github fa-1x p-4"></i></a>
     </div>
 </div>
 )
