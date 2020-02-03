@@ -183,19 +183,19 @@ return (
        
     </div>
     {hide == true && 
-    <div class="row propro">
-    <div class="columnpro">
+    <div className="row propro">
+    <div className="columnpro">
       <img src={chefUn}></img>
       <img src={chefDeux}></img>
       <img src={chefTrois}></img>
     </div>
-    <div class="columnpro">
+    <div className="columnpro">
       <img src={chefCinq}></img>
       <img src={empUn}></img>
       <img src={empDeux}></img>
       <img src={empTrois}></img>
     </div>
-    <div class="columnpro">
+    <div className="columnpro">
       <img src={empQuatre}></img>
       <img src={cvUn}></img>
       <img src={cvDeux}></img>

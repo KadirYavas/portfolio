@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 const Nav = () => {
 
     const [scrolle, setScrolle] = useState('')
-    const [aaa, setAaa] = useState('animated jackInTheBox infinite')
+    const [aaa, setAaa] = useState('animated rollIn')
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -16,6 +16,13 @@ const Nav = () => {
             }
         })
     })
+    const [navb, setNavb] = useState(true)
+    const hide = () => {
+        setNavb(false)
+    }
+    const opened = () => {
+        setNavb(true)
+    }
 
 
 
@@ -26,32 +33,35 @@ return (
     </div>
     <div className="col-lg-8 col-md-10">
         <nav className="navbar navbar-expand-lg navbar-light">
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            <button onClick={opened} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
+            {navb == true &&
             <div className="collapse navbar-collapse" id="navbarText">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="#top">Home</a>
+                        <a onClick={hide} className="nav-link" href="#top">Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#about">About</a>
+                        <a onClick={hide} className="nav-link" href="#about">About</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#service">Service</a>
+                        <a onClick={hide} className="nav-link" href="#service">Service</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#skill">Skills</a>
+                        <a onClick={hide} className="nav-link" href="#skill">Skills</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#pro">Projets</a>
+                        <a onClick={hide} className="nav-link" href="#pro">Projets</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#contact">Contact</a>
+                        <a onClick={hide} className="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
+            }
+
         </nav>
     </div>
 </div>
