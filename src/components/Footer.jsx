@@ -18,9 +18,9 @@ const Footer = () => {
                     <i className="fas fa-phone-volume fa-1x text-danger"> (+32) 486 90 50 69</i>
                 </div>
                 <div className="col-sm-12 col-lg-4 foot text-center">
-                    <a className="link" href="https://www.linkedin.com/in/salih-kadir-yavas/"><i className="fab fa-linkedin-in fa-1x p-5"></i></a>
-                    <a className="insta" href="https://www.instagram.com/yavas.03/"><i className="fab fa-instagram fa-1x p-5"></i></a>
-                    <a className="git" href="https://github.com/KadirYavas"><i className="fab fa-github fa-1x p-5"></i></a>
+                    <a className="link" target="_blank" href="https://www.linkedin.com/in/salih-kadir-yavas/"><i className="fab fa-linkedin-in fa-1x p-5"></i></a>
+                    <a className="insta" target="_blank" href="https://www.instagram.com/yavas.03/"><i className="fab fa-instagram fa-1x p-5"></i></a>
+                    <a className="git" target="_blank" href="https://github.com/KadirYavas"><i className="fab fa-github fa-1x p-5"></i></a>
                 </div>
             </div>
             <div className="row mt-2">
