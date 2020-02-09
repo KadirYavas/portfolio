@@ -90,7 +90,7 @@ return (
         <li><button onClick={chef} className={"btnPro " + roll}><span>Projet: Les Chefs</span></button></li>
         <li><button onClick={emp} className={"btnPro " + roll}><span>Projet: Emporium</span></button></li>
         <li><button onClick={cv} className={"btnPro " + roll}><span>CV</span></button></li>
-        <a href="#chef" target="_blank">lol</a>
+        
     </ul>
     <div className="carousel">
         {carUn == true &&
